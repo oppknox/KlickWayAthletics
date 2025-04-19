@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlickWay Athletics Logo Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .logo-generator {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #e01f26;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #c01a20;
+        }
+        
+        .preview {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .logo-container {
+            display: inline-block;
+            padding: 20px;
+            background-color: #0f0f0f;
+            border-radius: 8px;
+        }
+        
+        .logo {
+            position: relative;
+            text-align: center;
+        }
+        
+        .logo-text {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .logo-text span {
+            color: #e01f26;
+        }
+        
+        .logo-subtext {
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: 14px;
+            margin: 5px 0 0;
+            letter-spacing: 2px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+        
+        .logo-icon::before,
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            background-color: #e01f26;
+        }
+        
+        .logo-icon::before {
+            width: 100%;
+            height: 10px;
+            top: 15px;
+            left: 0;
+        }
+        
+        .logo-icon::after {
+            width: 10px;
+            height: 100%;
+            top: 0;
+            left: 15px;
+        }
+        
+        .download-instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            text-align: left;
+        }
+        
+        .download-instructions h3 {
+            margin-top: 0;
+        }
+        
+        .download-instructions ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KlickWay Athletics Logo Generator</h1>
+        
+        <div class="logo-generator">
+            <div class="form-group">
+                <label for="logoText">Logo Text</label>
+                <input type="text" id="logoText" value="KlickWay">
+            </div>
+            
+            <div class="form-group">
+                <label for="highlightText">Highlight Text (will be red)</label>
+                <input type="text" id="highlightText" value="">
+            </div>
+            
+            <div class="form-group">
+                <label for="subText">Sub Text</label>
+                <input type="text" id="subText" value="ATHLETICS">
+            </div>
+            
+            <div class="form-group">
+                <label for="fontSize">Font Size (px)</label>
+                <input type="number" id="fontSize" value="48" min="20" max="100">
+            </div>
+            
+            <div class="form-group">
+                <label for="showIcon">Show Icon</label>
+                <select id="showIcon">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="bgColor">Background Color</label>
+                <input type="color" id="bgColor" value="#0f0f0f">
+            </div>
+            
+            <div class="form-group">
+                <label for="textColor">Text Color</label>
+                <input type="color" id="textColor" value="#ffffff">
+            </div>
+            
+            <div class="form-group">
+                <label for="accentColor">Accent Color</label>
+                <input type="color" id="accentColor" value="#e01f26">
+            </div>
+            
+            <button id="generate">Generate Logo</button>
+        </div>
+        
+        <div class="preview">
+            <div class="logo-container" id="logoContainer">
+                <div class="logo">
+                    <div class="logo-icon" id="logoIcon"></div>
+                    <h1 class="logo-text" id="logoTextDisplay">KlickWay</h1>
+                    <p class="logo-subtext" id="logoSubtext">ATHLETICS</p>
+                </div>
+            </div>
+            
+            <div class="download-instructions">
+                <h3>How to Save Your Logo:</h3>
+                <ol>
+                    <li>Right-click on the logo above</li>
+                    <li>Select "Save image as..." or "Save picture as..."</li>
+                    <li>Choose a location on your computer and save</li>
+                    <li>For best results, take a screenshot (Windows: Win+Shift+S, Mac: Cmd+Shift+4)</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('generate').addEventListener('click', function() {
+            // Get form values
+            const logoText = document.getElementById('logoText').value;
+            const highlightText = document.getElementById('highlightText').value;
+            const subText = document.getElementById('subText').value;
+            const fontSize = document.getElementById('fontSize').value;
+            const showIcon = document.getElementById('showIcon').value === 'true';
+            const bgColor = document.getElementById('bgColor').value;
+            const textColor = document.getElementById('textColor').value;
+            const accentColor = document.getElementById('accentColor').value;
+            
+            // Update logo container background
+            document.getElementById('logoContainer').style.backgroundColor = bgColor;
+            
+            // Update logo icon
+            const logoIcon = document.getElementById('logoIcon');
+            if (showIcon) {
+                logoIcon.style.display = 'block';
+                logoIcon.style.setProperty('--accent-color', accentColor);
+            } else {
+                logoIcon.style.display = 'none';
+            }
+            
+            // Update logo icon colors
+            logoIcon.style.setProperty('--accent-color', accentColor);
+            logoIcon.querySelectorAll('::before, ::after').forEach(el => {
+                el.style.backgroundColor = accentColor;
+            });
+            
+            // Update logo text
+            const logoTextDisplay = document.getElementById('logoTextDisplay');
+            logoTextDisplay.style.fontSize = `${fontSize}px`;
+            logoTextDisplay.style.color = textColor;
+            
+            // Handle highlighted text
+            if (highlightText && logoText.includes(highlightText)) {
+                const parts = logoText.split(highlightText);
+                logoTextDisplay.innerHTML = parts[0] + `<span style="color: ${accentColor}">${highlightText}</span>` + parts[1];
+            } else {
+                logoTextDisplay.textContent = logoText;
+            }
+            
+            // Update subtext
+            const logoSubtext = document.getElementById('logoSubtext');
+            logoSubtext.textContent = subText;
+            logoSubtext.style.color = textColor;
+            logoSubtext.style.fontSize = `${parseInt(fontSize) / 3}px`;
+        });
+        
+        // Initialize with default values
+        document.getElementById('generate').click();
+    </script>
+</body>
+</html>

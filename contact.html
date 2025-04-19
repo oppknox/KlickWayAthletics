@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KlickWay Athletics</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles for contact page */
+        .contact-section {
+            padding: var(--section-padding);
+            padding-top: 120px; /* Extra padding for fixed header */
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .contact-info {
+            background-color: var(--dark-gray);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .contact-info h3 {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+        .contact-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            min-width: 24px;
+        }
+        
+        .contact-text h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-text p {
+            color: var(--light-gray);
+        }
+        
+        .contact-form {
+            background-color: var(--dark-gray);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .contact-form h3 {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--primary-color);
+            background-color: transparent;
+            color: var(--secondary-color);
+            border-radius: 4px;
+            font-size: 1rem;
+            min-height: 150px;
+            resize: vertical;
+            font-family: var(--body-font);
+        }
+        
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .map-container {
+            margin-top: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 400px;
+            background-color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-gray);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        @media (max-width: 767.98px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics Logo">
+                    </a>
+                </div>
+                <div class="cta-button">
+                    <a href="#" class="btn btn-primary">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <button class="close-menu" aria-label="Close Menu">
+                <span class="close-icon">×</span>
+            </button>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="has-submenu">
+                    <a href="#">We Offer</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="lifestyle-coaching.html">Lifestyle Coaching</a></li>
+                        <li><a href="contest-prep.html">Contest Prep</a></li>
+                    </ul>
+                </li>
+                <li><a href="classes.html">Classes</a></li>
+                <li class="has-submenu">
+                    <a href="#">Join Now</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="locations/everett.html">Everett</a></li>
+                        <li><a href="locations/renton.html">Renton</a></li>
+                        <li><a href="locations/marysville.html">Marysville</a></li>
+                        <li><a href="locations/seattle.html">Seattle</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">More</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="schedule-tour.html">Schedule Tour</a></li>
+                        <li><a href="request-workout.html">Request Free Workout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">CONTACT <span class="highlight">US</span></h2>
+            <p class="section-description">
+                Have questions or want to learn more about our services? Reach out to us using the contact information below or fill out the form, and we'll get back to you as soon as possible.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Main Location</h4>
+                            <p>123 Fitness Way, Seattle, WA 98101</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>(206) 555-1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@klickwayathletics.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 5am - 10pm</p>
+                            <p>Saturday: 7am - 8pm</p>
+                            <p>Sunday: 8am - 6pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Follow Us</h4>
+                            <div class="social-links" style="justify-content: flex-start; margin-top: 0.5rem;">
+                                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select Subject*</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="training">Personal Training</option>
+                                <option value="nutrition">Nutrition Coaching</option>
+                                <option value="contest">Contest Prep</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message*" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div>GOOGLE MAP WOULD APPEAR HERE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 KlickWay Athletics. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple form submission simulation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Disable form
+            const formElements = this.elements;
+            for (let i = 0; i < formElements.length; i++) {
+                formElements[i].disabled = true;
+            }
+            
+            // Show loading state
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+            submitButton.textContent = 'SENDING...';
+            
+            // Simulate server request
+            setTimeout(function() {
+                // Show success message
+                document.getElementById('contact-form').innerHTML = `
+                    <div class="success-message">
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully.</p>
+                        <p>We'll get back to you as soon as possible.</p>
+                    </div>
+                `;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

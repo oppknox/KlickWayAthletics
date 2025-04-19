@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="60" viewBox="0 0 150 60">
+  <style>
+    .logo-text { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 32px; fill: white; text-anchor: middle; }
+    .logo-highlight { fill: #e01f26; }
+    .logo-subtext { font-family: 'Arial', sans-serif; font-size: 12px; fill: white; text-anchor: middle; text-transform: uppercase; letter-spacing: 2px; }
+  </style>
+  <rect width="150" height="60" fill="transparent" />
+  <text x="75" y="35" class="logo-text">KLICK<tspan class="logo-highlight">WAY</tspan></text>
+  <text x="75" y="50" class="logo-subtext">ATHLETICS</text>
+</svg>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Prep - KlickWay Athletics</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles for contest prep page */
+        .contest-section {
+            padding: var(--section-padding);
+            padding-top: 120px; /* Extra padding for fixed header */
+        }
+        
+        .contest-hero {
+            position: relative;
+            height: 400px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                              url('img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .contest-hero-content {
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+        
+        .contest-hero-title {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .contest-hero-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .features-section {
+            margin-bottom: 4rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-box {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feature-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-title {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .feature-description {
+            color: var(--light-gray);
+        }
+        
+        .process-section {
+            margin-bottom: 4rem;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .process-step {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .process-step:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            top: 50%;
+            right: -1.5rem;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .step-title {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .step-description {
+            color: var(--light-gray);
+        }
+        
+        .testimonials-section {
+            margin-bottom: 4rem;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--light-gray);
+            font-style: italic;
+        }
+        
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            opacity: 0.3;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #666;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+        .author-info h4 {
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        
+        .author-info p {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+        
+        .pricing-section {
+            margin-bottom: 4rem;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pricing-card {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-header {
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+        }
+        
+        .pricing-title {
+            font-family: var(--heading-font);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        
+        .pricing-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .pricing-price {
+            padding: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .pricing-price span {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        
+        .pricing-features {
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .pricing-feature {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+        }
+        
+        .pricing-feature:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-action {
+            padding: 0 1.5rem 2rem;
+        }
+        
+        @media (max-width: 991.98px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-step:nth-child(2)::after {
+                display: none;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-step::after {
+                display: none;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics Logo">
+                    </a>
+                </div>
+                <div class="cta-button">
+                    <a href="#" class="btn btn-primary">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <button class="close-menu" aria-label="Close Menu">
+                <span class="close-icon">×</span>
+            </button>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="has-submenu">
+                    <a href="#">We Offer</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="lifestyle-coaching.html">Lifestyle Coaching</a></li>
+                        <li><a href="contest-prep.html">Contest Prep</a></li>
+                    </ul>
+                </li>
+                <li><a href="classes.html">Classes</a></li>
+                <li class="has-submenu">
+                    <a href="#">Join Now</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="locations/everett.html">Everett</a></li>
+                        <li><a href="locations/renton.html">Renton</a></li>
+                        <li><a href="locations/marysville.html">Marysville</a></li>
+                        <li><a href="locations/seattle.html">Seattle</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">More</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="schedule-tour.html">Schedule Tour</a></li>
+                        <li><a href="request-workout.html">Request Free Workout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contest Prep Section -->
+    <section class="contest-section">
+        <div class="container">
+            <div class="contest-hero">
+                <div class="contest-hero-content">
+                    <h1 class="contest-hero-title">CONTEST <span class="highlight">PREP</span></h1>
+                    <p class="contest-hero-text">
+                        KlickWay Athletics offers comprehensive contest preparation services for bodybuilding, physique, figure, and bikini competitors. Our expert coaches will guide you through every step of your competition journey.
+                    </p>
+                    <a href="#pricing" class="btn btn-primary">VIEW PACKAGES</a>
+                </div>
+            </div>
+            
+            <div class="features-section">
+                <h2 class="section-title">WHY CHOOSE <span class="highlight">KLICKWAY</span></h2>
+                <p class="section-description">
+                    Our contest prep services are designed to help you achieve your best physique while maintaining your health and well-being. Here's what sets us apart:
+                </p>
+                
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h3 class="feature-title">Personalized Approach</h3>
+                        <p class="feature-description">
+                            We create customized training and nutrition plans based on your unique body type, metabolism, and competition goals.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="feature-title">Experienced Coaches</h3>
+                        <p class="feature-description">
+                            Our coaches have competed at high levels and have helped numerous athletes achieve success on stage.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="feature-title">Comprehensive Support</h3>
+                        <p class="feature-description">
+                            From training and nutrition to posing practice and competition day logistics, we cover every aspect of your prep.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-section">
+                <h2 class="section-title">OUR <span class="highlight">PROCESS</span></h2>
+                <p class="section-description">
+                    We follow a structured approach to ensure you're ready to bring your best package to the stage:
+                </p>
+                
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Assessment</h3>
+                        <p class="step-description">
+                            We evaluate your current physique, training history, and competition goals to create a personalized plan.
+                        </p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Building</h3>
+                        <p class="step-description">
+                            Focus on building quality muscle and improving weak areas while maintaining a reasonable body fat level.
+                        </p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Cutting</h3>
+                        <p class="step-description">
+                            Strategic reduction of body fat while preserving muscle mass to achieve peak conditioning.
+                        </p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Peak Week</h3>
+                        <p class="step-description">
+                            Fine-tuning nutrition, water, and training to ensure you look your absolute best on stage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-section">
+                <h2 class="section-title">SUCCESS <span class="highlight">STORIES</span></h2>
+                <p class="section-description">
+                    Hear from competitors who have achieved success with KlickWay Athletics:
+                </p>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            Working with KlickWay Athletics transformed my physique and my approach to competition. I placed in the top 3 in my first show and won my class in my second competition!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">JM</div>
+                            <div class="author-info">
+                                <h4>Jessica Miller</h4>
+                                <p>Bikini Competitor</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            The personalized approach made all the difference. My coach adjusted my plan weekly based on my progress, and I achieved my pro card after just two years of competing.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-image">DR</div>
+                            <div class="author-info">
+                                <h4>David Rodriguez</h4>
+                                <p>Men's Physique Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pricing" class="pricing-section">
+                <h2 class="section-title">CONTEST PREP <span class="highlight">PACKAGES</span></h2>
+                <p class="section-description">
+                    Choose the package that best fits your needs and competition goals:
+                </p>
+                
+                <div class="pricing-grid">
+                    <!-- Package 1 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Basic</h3>
+                            <p class="pricing-subtitle">For first-time competitors</p>
+                        </div>
+                        <div class="pricing-price">
+                            $199<span>/month</span>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">Customized Training Plan</div>
+                            <div class="pricing-feature">Basic Nutrition Guidance</div>
+                            <div class="pricing-feature">Bi-weekly Check-ins</div>
+                            <div class="pricing-feature">Email Support</div>
+                            <div class="pricing-feature">Basic Posing Instruction</div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#" class="btn btn-secondary">GET STARTED</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 2 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Premium</h3>
+                            <p class="pricing-subtitle">Our most popular package</p>
+                        </div>
+                        <div class="pricing-price">
+                            $299<span>/month</span>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">Advanced Training Program</div>
+                            <div class="pricing-feature">Detailed Nutrition Plan</div>
+                            <div class="pricing-feature">Weekly Check-ins</div>
+                            <div class="pricing-feature">24/7 Text Support</div>
+                            <div class="pricing-feature">Advanced Posing Sessions</div>
+                            <div class="pricing-feature">Supplement Guidance</div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#" class="btn btn-primary">GET STARTED</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 3 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Elite</h3>
+                            <p class="pricing-subtitle">For serious competitors</p>
+                        </div>
+                        <div class="pricing-price">
+                            $499<span>/month</span>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="pricing-feature">Elite Training Program</div>
+                            <div class="pricing-feature">Custom Meal Plans</div>
+                            <div class="pricing-feature">Daily Check-ins</div>
+                            <div class="pricing-feature">24/7 Phone Support</div>
+                            <div class="pricing-feature">Private Posing Sessions</div>
+                            <div class="pricing-feature">Competition Day Coaching</div>
+                            <div class="pricing-feature">Peak Week Protocol</div>
+                        </div>
+                        <div class="pricing-action">
+                            <a href="#" class="btn btn-secondary">GET STARTED</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section" style="text-align: center; margin-top: 4rem;">
+                <h2 class="section-title">READY TO <span class="highlight">COMPETE?</span></h2>
+                <p class="section-description" style="max-width: 700px; margin: 0 auto 2rem;">
+                    Take the first step toward your competition goals. Schedule a consultation with one of our expert coaches to discuss your goals and create a plan for success.
+                </p>
+                <a href="contact.html" class="btn btn-primary">SCHEDULE CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 KlickWay Athletics. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

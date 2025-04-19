@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KlickWay Athletics</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles for about page */
+        .about-section {
+            padding: var(--section-padding);
+            padding-top: 120px; /* Extra padding for fixed header */
+        }
+        
+        .about-hero {
+            position: relative;
+            height: 400px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23222"/><circle cx="20" cy="20" r="8" fill="%23333"/><circle cx="60" cy="60" r="8" fill="%23333"/></svg>');
+            background-size: cover, 200px;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .about-hero-content {
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+        
+        .about-hero-title {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .about-hero-text {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+        
+        .about-story {
+            margin-bottom: 4rem;
+        }
+        
+        .about-story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .about-story-image {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid var(--primary-color);
+            background-color: #777;
+            background-image: linear-gradient(rgba(119, 119, 119, 0.7), rgba(119, 119, 119, 0.7)),
+                              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23777"/><circle cx="50" cy="50" r="30" fill="%23888"/></svg>');
+            background-size: cover, 100px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .about-story-text h3 {
+            font-family: var(--heading-font);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+        .about-story-text p {
+            margin-bottom: 1.5rem;
+            color: var(--light-gray);
+        }
+        
+        .team-section {
+            margin-bottom: 4rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member-image {
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            background-color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .team-member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+        }
+        
+        .team-member-content {
+            padding: 1.5rem;
+        }
+        
+        .team-member-name {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        
+        .team-member-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .team-member-bio {
+            color: var(--light-gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .team-member-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .team-social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .team-social-link:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        .values-section {
+            margin-bottom: 4rem;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-card {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .value-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .value-title {
+            font-family: var(--heading-font);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .value-description {
+            color: var(--light-gray);
+        }
+        
+        @media (max-width: 991.98px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .about-story-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics Logo">
+                    </a>
+                </div>
+                <div class="cta-button">
+                    <a href="#" class="btn btn-primary">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <button class="close-menu" aria-label="Close Menu">
+                <span class="close-icon">×</span>
+            </button>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li class="has-submenu">
+                    <a href="#">We Offer</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="lifestyle-coaching.html">Lifestyle Coaching</a></li>
+                        <li><a href="contest-prep.html">Contest Prep</a></li>
+                    </ul>
+                </li>
+                <li><a href="classes.html">Classes</a></li>
+                <li class="has-submenu">
+                    <a href="#">Join Now</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="locations/everett.html">Everett</a></li>
+                        <li><a href="locations/renton.html">Renton</a></li>
+                        <li><a href="locations/marysville.html">Marysville</a></li>
+                        <li><a href="locations/seattle.html">Seattle</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">More</a>
+                    <span class="submenu-toggle">→</span>
+                    <ul class="submenu">
+                        <li><a href="schedule-tour.html">Schedule Tour</a></li>
+                        <li><a href="request-workout.html">Request Free Workout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-hero">
+                <div class="about-hero-content">
+                    <h1 class="about-hero-title">ABOUT <span class="highlight">KLICKWAY ATHLETICS</span></h1>
+                    <p class="about-hero-text">
+                        We're more than just a gym. We're a community dedicated to helping you achieve your fitness goals and transform your life.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="about-story">
+                <h2 class="section-title">OUR <span class="highlight">STORY</span></h2>
+                <div class="about-story-content">
+                        <div class="about-story-image">
+                            <img src="img/4.png" alt="Founder" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; position: relative;">
+                        </div>
+                    <div class="about-story-text">
+                        <h3>FROM PASSION TO PURPOSE</h3>
+                        <p>
+                            KlickWay Athletics was founded by Brian Klick in 2010 as a professional alternative to cookie-cutter workouts, corporate gym trainers, and fad diets. With years of professional training and competition experience, Brian understood that there is no one-size-fits-all plan that works for everyone.
+                        </p>
+                        <p>
+                            What started as a small personal training studio in Seattle has grown into multiple locations throughout the area, each maintaining the personalized approach and community feel that sets KlickWay apart from other gyms.
+                        </p>
+                        <p>
+                            Today, KlickWay Athletics continues to evolve and expand, but our core mission remains the same: to provide personalized fitness solutions that deliver real results for real people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-section">
+                <h2 class="section-title">MEET OUR <span class="highlight">TEAM</span></h2>
+                <p class="section-description">
+                    Our team of certified trainers and nutrition experts are passionate about helping you achieve your fitness goals. With diverse backgrounds and specialties, we have the expertise to guide you on your fitness journey.
+                </p>
+                
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="img/4.png" alt="Brian Klick" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; position: relative;">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Brian Klick</h3>
+                            <p class="team-member-title">Founder & Head Coach</p>
+                            <p class="team-member-bio">
+                                With over 15 years of experience in fitness and competition, Brian leads our team with passion and expertise.
+                            </p>
+                            <div class="team-member-social">
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="img/2.jpg" alt="Sarah Johnson" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; position: relative;">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Sarah Johnson</h3>
+                            <p class="team-member-title">Nutrition Coach</p>
+                            <p class="team-member-bio">
+                                Sarah specializes in creating sustainable nutrition plans that complement your training for optimal results.
+                            </p>
+                            <div class="team-member-social">
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="img/1.jpg" alt="Mike Torres" style="width: 100%; height: 100%; object-fit: cover; opacity: 1; position: relative;">
+                        </div>
+                        <div class="team-member-content">
+                            <h3 class="team-member-name">Mike Torres</h3>
+                            <p class="team-member-title">Strength Coach</p>
+                            <p class="team-member-bio">
+                                A former competitive powerlifter, Mike helps clients build strength and power through expert programming.
+                            </p>
+                            <div class="team-member-social">
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="team-social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="values-section">
+                <h2 class="section-title">OUR <span class="highlight">VALUES</span></h2>
+                <p class="section-description">
+                    At KlickWay Athletics, our values guide everything we do. They shape our approach to fitness, our relationships with clients, and our vision for the future.
+                </p>
+                
+                <div class="values-grid">
+                    <!-- Value 1 -->
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value-title">Community</h3>
+                        <p class="value-description">
+                            We believe in building a supportive community where everyone feels welcome and motivated to achieve their goals.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="value-title">Progress</h3>
+                        <p class="value-description">
+                            We focus on continuous improvement, celebrating every milestone on the journey to your fitness goals.
+                        </p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h3 class="value-title">Personalization</h3>
+                        <p class="value-description">
+                            We recognize that everyone is unique, and we tailor our approach to meet your specific needs and goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section" style="text-align: center; margin-top: 4rem;">
+                <h2 class="section-title">JOIN THE <span class="highlight">KLICKWAY</span> FAMILY</h2>
+                <p class="section-description" style="max-width: 700px; margin: 0 auto 2rem;">
+                    Ready to experience the KlickWay difference? Visit one of our locations or schedule a free workout session to get started on your fitness journey.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="locations.html" class="btn btn-secondary">OUR LOCATIONS</a>
+                    <a href="request-workout.html" class="btn btn-primary">FREE WORKOUT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 KlickWay Athletics. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

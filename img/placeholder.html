@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .image-generator {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #e01f26;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #c01a20;
+        }
+        
+        .preview {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .preview-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+        }
+        
+        .download-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .download-link:hover {
+            background-color: #555;
+        }
+        
+        .placeholder {
+            position: relative;
+            overflow: hidden;
+            background-color: #0f0f0f;
+        }
+        
+        .placeholder-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Placeholder Image Generator for KlickWay Athletics</h1>
+        
+        <div class="image-generator">
+            <div class="form-group">
+                <label for="width">Width (px)</label>
+                <input type="number" id="width" value="1200" min="100" max="2000">
+            </div>
+            
+            <div class="form-group">
+                <label for="height">Height (px)</label>
+                <input type="number" id="height" value="600" min="100" max="2000">
+            </div>
+            
+            <div class="form-group">
+                <label for="text">Text</label>
+                <input type="text" id="text" value="KlickWay Athletics">
+            </div>
+            
+            <div class="form-group">
+                <label for="bgColor">Background Color</label>
+                <input type="color" id="bgColor" value="#0f0f0f">
+            </div>
+            
+            <div class="form-group">
+                <label for="textColor">Text Color</label>
+                <input type="color" id="textColor" value="#ffffff">
+            </div>
+            
+            <button id="generate">Generate Image</button>
+        </div>
+        
+        <div class="preview">
+            <div id="placeholderContainer" class="placeholder" style="width: 1200px; height: 600px; background-color: #0f0f0f;">
+                <div class="placeholder-text" style="color: #ffffff;">KlickWay Athletics</div>
+            </div>
+            <p>Right-click on the image and select "Save image as..." to download</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('generate').addEventListener('click', function() {
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+            const text = document.getElementById('text').value;
+            const bgColor = document.getElementById('bgColor').value;
+            const textColor = document.getElementById('textColor').value;
+            
+            const placeholderContainer = document.getElementById('placeholderContainer');
+            placeholderContainer.style.width = width + 'px';
+            placeholderContainer.style.height = height + 'px';
+            placeholderContainer.style.backgroundColor = bgColor;
+            
+            const placeholderText = placeholderContainer.querySelector('.placeholder-text');
+            placeholderText.textContent = text;
+            placeholderText.style.color = textColor;
+        });
+    </script>
+</body>
+</html>
