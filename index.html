@@ -3,356 +3,698 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KlickWay Athletics - Unlock Your Potential</title>
+    <title>KlickWay Athletics - Unlock Your Potential | Premium Fitness Centers in Washington</title>
+    <meta name="description" content="KlickWay Athletics offers personalized fitness solutions with locations in Everett, Renton, Marysville, and Seattle. Join us for personal training, nutrition coaching, and more.">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span class="award-badge">
+                        <i class="fas fa-trophy"></i>
+                        Winner - Best Training Facility in Washington
+                    </span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="tel:206-555-0100" class="top-phone">
+                        <i class="fas fa-phone"></i>
+                        (206) 555-0100
+                    </a>
+                    <div class="social-links-top">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header>
+    <header class="main-header">
         <div class="container">
             <div class="header-content">
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <span class="hamburger-icon"></span>
-                </button>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics Logo">
+                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics">
                     </a>
                 </div>
-                <div class="cta-button">
-                    <a href="#" class="btn btn-primary">Join Us</a>
-                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="classes.html">Classes <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="boot-camp.html">Boot Camp</a></li>
+                                <li><a href="cardio-sculpt.html">Cardio Sculpt</a></li>
+                                <li><a href="personal-training.html">Personal Training</a></li>
+                                <li><a href="strength-training.html">Strength Training</a></li>
+                                <li><a href="mobility-training.html">Mobility Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="locations.html">Locations <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="locations/everett.html">Everett</a></li>
+                                <li><a href="locations/renton.html">Renton</a></li>
+                                <li><a href="locations/marysville.html">Marysville</a></li>
+                                <li><a href="locations/seattle.html">Seattle</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="join-now.html" class="btn-nav">Join Now</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Navigation Menu -->
+    <!-- Mobile Navigation -->
     <nav class="mobile-nav">
-        <div class="mobile-nav-container">
-            <button class="close-menu" aria-label="Close Menu">
-                <span class="close-icon">×</span>
+        <div class="mobile-nav-header">
+            <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics">
+            <button class="mobile-nav-close" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
             </button>
-            <ul class="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li class="has-submenu">
-                    <a href="#">We Offer</a>
-                    <span class="submenu-toggle">→</span>
-                    <ul class="submenu">
-                        <li><a href="lifestyle-coaching.html">Lifestyle Coaching</a></li>
-                        <li><a href="contest-prep.html">Contest Prep</a></li>
-                    </ul>
-                </li>
-                <li><a href="classes.html">Classes</a></li>
-                <li class="has-submenu">
-                    <a href="#">Join Now</a>
-                    <span class="submenu-toggle">→</span>
-                    <ul class="submenu">
-                        <li><a href="locations/everett.html">Everett</a></li>
-                        <li><a href="locations/renton.html">Renton</a></li>
-                        <li><a href="locations/marysville.html">Marysville</a></li>
-                        <li><a href="locations/seattle.html">Seattle</a></li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="#">More</a>
-                    <span class="submenu-toggle">→</span>
-                    <ul class="submenu">
-                        <li><a href="schedule-tour.html">Schedule Tour</a></li>
-                        <li><a href="request-workout.html">Request Free Workout</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#" class="has-submenu">Classes <i class="fas fa-plus"></i></a>
+                <ul class="submenu">
+                    <li><a href="boot-camp.html">Boot Camp</a></li>
+                    <li><a href="cardio-sculpt.html">Cardio Sculpt</a></li>
+                    <li><a href="personal-training.html">Personal Training</a></li>
+                    <li><a href="strength-training.html">Strength Training</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-submenu">Locations <i class="fas fa-plus"></i></a>
+                <ul class="submenu">
+                    <li><a href="locations/everett.html">Everett</a></li>
+                    <li><a href="locations/renton.html">Renton</a></li>
+                    <li><a href="locations/marysville.html">Marysville</a></li>
+                    <li><a href="locations/seattle.html">Seattle</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="join-now.html" class="mobile-join-btn">Join Now</a></li>
+        </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section with Free Trial Offer -->
+    <section class="hero-main">
         <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content animate-on-scroll">
-                <h1 class="hero-title">UNLOCK YOUR <span class="highlight">POTENTIAL</span></h1>
-                <h2 class="hero-subtitle">WITH KLICKWAY ATHLETICS</h2>
-                <p class="hero-text">
-                    KlickWay Athletics offers the perfect blend of state-of-the-art gym facilities and expert coaching services
-                    tailored to your goals. Whether you're looking to build strength, enhance performance, or transform your
-                    lifestyle
-                </p>
-                <a href="locations.html" class="btn btn-secondary">Our Locations</a>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Help Members Realize Their Most Passionate 
+                            <span class="text-gradient">KlickWay Athletics</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Join KlickWay Athletics and transform your fitness journey with personalized training, 
+                            expert nutrition coaching, and a supportive community across four Washington locations.
+                        </p>
+                        <div class="hero-features">
+                            <div class="hero-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24-Hour Access (Weekdays)</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Personal Trainers</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Science-Based Nutrition</span>
+                            </div>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="#free-trial" class="btn btn-primary btn-lg">
+                                Start Your 7-Day Free Trial
+                            </a>
+                            <a href="locations.html" class="btn btn-outline btn-lg">
+                                Find Your Location
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Free Trial Form -->
+                    <div class="hero-form" id="free-trial">
+                        <div class="form-card">
+                            <h3 class="form-title">Try Us For 7 Days FREE</h3>
+                            <p class="form-subtitle">No commitment. No credit card required.</p>
+                            <form id="free-trial-form" class="trial-form">
+                                <div class="form-group">
+                                    <input type="text" name="firstName" placeholder="First Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="lastName" placeholder="Last Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Email*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" placeholder="Phone*" required>
+                                </div>
+                                <div class="form-group">
+                                    <select name="location" required>
+                                        <option value="">Select Location*</option>
+                                        <option value="everett">Everett</option>
+                                        <option value="renton">Renton</option>
+                                        <option value="marysville">Marysville</option>
+                                        <option value="seattle">Seattle</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="goal">
+                                        <option value="">What's Your Goal?</option>
+                                        <option value="weight-loss">Weight Loss</option>
+                                        <option value="muscle-gain">Muscle Gain</option>
+                                        <option value="strength">Strength Training</option>
+                                        <option value="competition">Competition Prep</option>
+                                        <option value="general">General Fitness</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-submit">
+                                    Get Your Free Pass
+                                </button>
+                                <p class="form-disclaimer">
+                                    By submitting, you agree to receive communications from KlickWay Athletics.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
+    <!-- Six Components of Fitness -->
+    <section class="fitness-components">
         <div class="container">
-            <div class="services-grid">
-                <!-- Open Gym -->
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="img/1.jpg" alt="Open Gym">
+            <div class="section-header">
+                <h2 class="section-title">Our Six Components Approach to Fitness</h2>
+                <p class="section-subtitle">
+                    A comprehensive methodology that ensures balanced development and sustainable results
+                </p>
+            </div>
+            <div class="components-grid">
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-dumbbell"></i>
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">OPEN GYM</h3>
-                        <p class="service-description">
-                            Top-tier equipment, spacious layout, and a motivating atmosphere.
-                        </p>
-                        <a href="#" class="service-link">LEARN MORE</a>
+                    <h3>Strength Training</h3>
+                    <p>Build lean muscle and increase overall strength with progressive overload techniques</p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Cardiovascular Health</h3>
+                    <p>Improve heart health and endurance through varied cardio programming</p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Flexibility & Mobility</h3>
+                    <p>Enhance range of motion and prevent injuries with targeted mobility work</p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutrition Coaching</h3>
+                    <p>Fuel your body properly with personalized nutrition plans and guidance</p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Wellness</h3>
+                    <p>Develop mental resilience and positive habits for long-term success</p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Recovery & Rest</h3>
+                    <p>Optimize recovery with proper rest protocols and recovery strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transform Your Life With Our Programs</h2>
+                <p class="section-subtitle">Choose from our variety of expert-led fitness programs</p>
+            </div>
+            <div class="programs-grid">
+                <!-- Boot Camp -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="img/1.jpg" alt="Boot Camp Training">
+                        <div class="program-badge">Most Popular</div>
+                    </div>
+                    <div class="program-content">
+                        <h3>Boot Camp</h3>
+                        <p>High-intensity group training that burns calories and builds community</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> 45-minute sessions</li>
+                            <li><i class="fas fa-check"></i> All fitness levels welcome</li>
+                            <li><i class="fas fa-check"></i> Certified instructors</li>
+                        </ul>
+                        <a href="boot-camp.html" class="btn btn-program">Learn More</a>
                     </div>
                 </div>
 
                 <!-- Personal Training -->
-                <div class="service-card">
-                    <div class="service-image">
+                <div class="program-card">
+                    <div class="program-image">
                         <img src="img/2.jpg" alt="Personal Training">
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">PERSONAL TRAINING</h3>
-                        <p class="service-description">
-                            Customized plans with certified trainers to help you achieve your fitness goals.
-                        </p>
-                        <a href="#" class="service-link">LEARN MORE</a>
+                    <div class="program-content">
+                        <h3>Personal Training</h3>
+                        <p>One-on-one coaching tailored to your specific goals and needs</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Customized workout plans</li>
+                            <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                            <li><i class="fas fa-check"></i> Progress tracking</li>
+                        </ul>
+                        <a href="personal-training.html" class="btn btn-program">Learn More</a>
                     </div>
                 </div>
 
                 <!-- Nutrition Coaching -->
-                <div class="service-card">
-                    <div class="service-image">
+                <div class="program-card">
+                    <div class="program-image">
                         <img src="img/Untitled_design.png" alt="Nutrition Coaching">
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">NUTRITION COACHING</h3>
-                        <p class="service-description">
-                            Science-backed practical guidance for sustainable lifestyle changes.
-                        </p>
-                        <a href="#" class="service-link">LEARN MORE</a>
+                    <div class="program-content">
+                        <h3>Nutrition Coaching</h3>
+                        <p>Science-based nutrition guidance for sustainable lifestyle changes</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Personalized meal plans</li>
+                            <li><i class="fas fa-check"></i> Weekly check-ins</li>
+                            <li><i class="fas fa-check"></i> Habit-based approach</li>
+                        </ul>
+                        <a href="nutrition-coaching.html" class="btn btn-program">Learn More</a>
                     </div>
                 </div>
 
                 <!-- Contest Prep -->
-                <div class="service-card">
-                    <div class="service-image">
+                <div class="program-card">
+                    <div class="program-image">
                         <img src="img/Untitled_design_1.png" alt="Contest Prep">
                     </div>
-                    <div class="service-content">
-                        <h3 class="service-title">CONTEST PREP</h3>
-                        <p class="service-description">
-                            Comprehensive support, from training plans to posing practice for athletes.
+                    <div class="program-content">
+                        <h3>Contest Prep</h3>
+                        <p>Comprehensive competition preparation for bodybuilding and physique</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Posing practice</li>
+                            <li><i class="fas fa-check"></i> Peak week protocols</li>
+                            <li><i class="fas fa-check"></i> Stage presence coaching</li>
+                        </ul>
+                        <a href="contest-prep.html" class="btn btn-program">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Preview -->
+    <section class="locations-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Four Convenient Locations to Serve You</h2>
+                <p class="section-subtitle">State-of-the-art facilities across Washington</p>
+            </div>
+            <div class="locations-grid">
+                <!-- Everett -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Everett</h3>
+                        <span class="location-badge">24/7</span>
+                    </div>
+                    <div class="location-info">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            123 Main Street, Everett, WA 98201
                         </p>
-                        <a href="#" class="service-link">LEARN MORE</a>
+                        <p class="phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:425-555-0101">(425) 555-0101</a>
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <p>Mon-Fri: 24 Hours</p>
+                            <p>Sat: 5am - 8pm</p>
+                            <p>Sun: 8am - 8pm</p>
+                        </div>
+                        <a href="locations/everett.html" class="btn btn-location">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Renton -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Renton</h3>
+                        <span class="location-badge">24/7</span>
+                    </div>
+                    <div class="location-info">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            456 Valley Rd, Renton, WA 98057
+                        </p>
+                        <p class="phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:425-555-0102">(425) 555-0102</a>
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <p>Mon-Fri: 24 Hours</p>
+                            <p>Sat-Sun: 8am - 8pm</p>
+                        </div>
+                        <a href="locations/renton.html" class="btn btn-location">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Marysville -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Marysville</h3>
+                        <span class="location-badge">24/7</span>
+                    </div>
+                    <div class="location-info">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            789 State Ave, Marysville, WA 98270
+                        </p>
+                        <p class="phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:360-555-0103">(360) 555-0103</a>
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Hours:</strong></p>
+                            <p>Mon-Fri: 24 Hours</p>
+                            <p>Sat: 5am - 8pm</p>
+                            <p>Sun: 8am - 8pm</p>
+                        </div>
+                        <a href="locations/marysville.html" class="btn btn-location">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Seattle -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Seattle</h3>
+                        <span class="location-badge">24/7</span>
+                    </div>
+                    <div class="location-info">
+                        <p class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            321 Pike St, Seattle, WA 98101
+                        </p>
+                        <p class="phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:206-555-0104">(206) 555-0104</a>
+                        </p>
+                        <div class="location-hours">
+                            <p><strong>Opening January 2025</strong></p>
+                            <p>Pre-registration available</p>
+                        </div>
+                        <a href="locations/seattle.html" class="btn btn-location">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="locations-cta">
+                <a href="locations.html" class="btn btn-primary btn-lg">View All Locations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real Results From Real Members</h2>
+                <p class="section-subtitle">See what our members have achieved</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="img/FB9A6574.jpg" alt="Member Success">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "KlickWay Athletics changed my life. I lost 45 pounds and gained confidence I never knew I had. The trainers are incredible!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Lost 45 lbs in 6 months</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg" alt="Member Success">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The contest prep team at KlickWay helped me win my first bodybuilding competition. Their expertise is unmatched!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Mike R.</strong>
+                            <span>Competition Winner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="img/DJI_20250318065304_0305_D.jpg" alt="Member Success">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The nutrition coaching program taught me how to eat for my goals. I'm stronger and healthier than ever at 50!"
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>Jennifer L.</strong>
+                            <span>Nutrition Success Story</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expert Coaching Section -->
-    <section class="expert-coaching">
+    <!-- Blog Preview -->
+    <section class="blog-preview">
         <div class="container">
-            <h2 class="section-title"><span class="highlight">ACHIEVE MORE</span> WITH EXPERT COACHING</h2>
-            <p class="section-description">
-                Our coaching services are designed for everyone—from beginners to elite athletes. Experience personalized programs that deliver results.
-            </p>
-        </div>
-    </section>
+            <div class="section-header">
+                <h2 class="section-title">Latest From Our Blog</h2>
+                <p class="section-subtitle">Tips, insights, and motivation for your fitness journey</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/1.jpg" alt="Blog Post">
+                        <div class="blog-category">Nutrition</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/post-1.html">5 Superfoods to Boost Your Workout Performance</a></h3>
+                        <p>Discover the power-packed foods that can take your training to the next level...</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 15, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/DJI_20250318065304_0305_D.jpg" alt="KlickWay Team">
-                </div>
-                <div class="about-text">
-                    <h2 class="section-title">PROGRESS IS OUR FOCUS</h2>
-                    <p>
-                        Klick Way was founded by Brian Klick as a professional alternative to cookie cutter workouts, corporate gym trainers, and fad diets. With years of professional training and competition experience, he understands that there is no plan that works for everyone. To reach your best requires an approach made just for you.
-                    </p>
-                    <a href="#" class="btn btn-primary">Start Your Journey</a>
-                </div>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/2.jpg" alt="Blog Post">
+                        <div class="blog-category">Training</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/post-2.html">Winter Workout Strategies: Stay Fit During Cold Months</a></h3>
+                        <p>Don't let the cold weather derail your fitness goals. Here's how to adapt...</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 10, 2025</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="img/Untitled_design.png" alt="Blog Post">
+                        <div class="blog-category">Wellness</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="blog/post-3.html">The Mind-Body Connection in Fitness</a></h3>
+                        <p>Understanding how mental wellness impacts your physical performance...</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 5, 2025</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="blog.html" class="btn btn-outline">View All Articles</a>
             </div>
         </div>
     </section>
 
-    <!-- Contest Prep Section -->
-    <section class="contest-prep">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="contest-content">
-                <div class="contest-image">
-                    <img src="img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg" alt="Contest Prep Team">
-                </div>
-                <div class="contest-text">
-                    <h2 class="section-title">GET READY FOR CONTEST PREP</h2>
-                    <p>
-                        Klick Way Coaches are experts at transforming average into amazing. Whether you have dreams of competing at the highest levels or just want to look and feel picture perfect, Brian and the Klick Way team know how to turn your dream body into a reality.
-                    </p>
-                    <a href="#" class="btn btn-primary">Request a Free Workout</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h3 class="faq-subtitle">FAQS</h3>
-            <h2 class="section-title">QUESTIONS? WE HAVE THE ANSWERS!</h2>
-            
-            <div class="accordion">
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        What are the gym hours?
-                        <span class="accordion-icon">→</span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Our gym is open Monday through Friday from 5am to 10pm, Saturday from 7am to 8pm, and Sunday from 8am to 6pm. Hours may vary by location, so please check your specific location for details.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Do you offer personal training?
-                        <span class="accordion-icon">→</span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Yes, we offer personalized training sessions with our certified trainers. Our trainers work with you to create a customized plan based on your goals and fitness level.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Do you offer free assessments?
-                        <span class="accordion-icon">→</span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Yes, we offer free fitness assessments for new members. This helps us understand your current fitness level and goals so we can recommend the best approach for you.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        What equipment is available at your gym?
-                        <span class="accordion-icon">→</span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>Our gyms are equipped with state-of-the-art cardio machines, free weights, strength training equipment, functional training areas, and specialized equipment for bodybuilding and competition prep.</p>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        Are there membership options?
-                        <span class="accordion-icon">→</span>
-                    </button>
-                    <div class="accordion-content">
-                        <p>We offer various membership options including monthly, quarterly, and annual plans. We also have special rates for students, military, and seniors. Contact your local gym for specific pricing and options.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <!-- Nutrition -->
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3 class="feature-title">NUTRITION</h3>
-                    <p class="feature-description">
-                        Fuel your body with the right nutrients to enhance energy and recovery.
-                    </p>
-                </div>
-
-                <!-- Strength -->
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3 class="feature-title">STRENGTH</h3>
-                    <p class="feature-description">
-                        Build muscle, increase power, and improve endurance with expert-designed workouts.
-                    </p>
-                </div>
-
-                <!-- Mobility -->
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-running"></i>
-                    </div>
-                    <h3 class="feature-title">MOBILITY</h3>
-                    <p class="feature-description">
-                        Enhance flexibility and movement efficiency to prevent injuries and improve performance.
-                    </p>
-                </div>
-
-                <!-- Fat Loss -->
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-weight"></i>
-                    </div>
-                    <h3 class="feature-title">FAT LOSS</h3>
-                    <p class="feature-description">
-                        Burn fat effectively with science-based training and nutrition strategies tailored to you.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">STAY INFORMED AND GET FIT</h2>
-            <form id="newsletter-form" class="newsletter-form animate-on-scroll">
-                <div class="form-group">
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone*" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email*" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-full">SUBMIT</button>
-                <p class="form-disclaimer">
-                    By clicking SUBMIT Above, you agree to the Privacy Policy and authorize Klickway, our affiliates, as well as our marketing and/or service providers to send you non-emergency, automated text messages at the number you entered above. Consent is not a condition of purchase. Reply STOP to opt-out of text messaging. Standard rates may apply.
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Fitness Journey?</h2>
+                <p class="cta-subtitle">
+                    Join thousands of members who have transformed their lives at KlickWay Athletics
                 </p>
-            </form>
+                <div class="cta-buttons">
+                    <a href="#free-trial" class="btn btn-white btn-lg">
+                        Get Your Free 7-Day Pass
+                    </a>
+                    <a href="schedule-tour.html" class="btn btn-outline-white btn-lg">
+                        Schedule a Tour
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.instagram.com/" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-column">
+                    <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics" class="footer-logo">
+                    <p>
+                        KlickWay Athletics offers the perfect blend of state-of-the-art facilities and expert coaching 
+                        to help you unlock your potential.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="personal-training.html">Personal Training</a></li>
+                        <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Locations -->
+                <div class="footer-column">
+                    <h4>Our Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="locations/everett.html">Everett</a></li>
+                        <li><a href="locations/renton.html">Renton</a></li>
+                        <li><a href="locations/marysville.html">Marysville</a></li>
+                        <li><a href="locations/seattle.html">Seattle (24/7)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:206-555-0100">(206) 555-0100</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@klickwayathletics.com">info@klickwayathletics.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            Mon-Fri: 24 Hours<br>
+                            Sat-Sun: Varies by Location
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-info">
-                <p>&copy; 2025 KlickWay Athletics. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 KlickWay Athletics. All Rights Reserved.</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="membership-agreement.html">Membership Agreement</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="js/main.js"></script>
     <script src="js/form-validation.js"></script>

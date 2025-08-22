@@ -1,0 +1,24 @@
+{
+  "name": "KlickWay Athletics",
+  "short_name": "KlickWay",
+  "description": "Premium fitness centers in Washington - Personal training, nutrition coaching, and more",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#28a745",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/Klickway-Athletics_Secondary-Logo-on-Black.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "fitness",
+    "health",
+    "sports"
+  ],
+  "lang": "en-US"
+}

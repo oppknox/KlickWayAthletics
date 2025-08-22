@@ -1,0 +1,18 @@
+{
+  "name": "klickway-athletics",
+  "version": "1.0.0",
+  "description": "KlickWay Athletics Website",
+  "scripts": {
+    "test": "playwright test",
+    "test:analysis": "playwright test site-analysis.spec.js",
+    "test:improvements": "playwright test improvements-scanner.spec.js", 
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "serve": "npx http-server -p 8080"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "http-server": "^14.1.1"
+  }
+}
