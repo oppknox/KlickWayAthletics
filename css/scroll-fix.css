@@ -6,15 +6,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Fix for hero section stuttering */
+/* Fix for hero section stuttering and overlap */
 .hero-main {
-    contain: layout style paint;
+    contain: layout;
     isolation: isolate;
+    overflow-x: hidden;
+    overflow-y: visible;
+    clip-path: none;
 }
 
 .hero-main::before {
     will-change: auto;
     transform: translateZ(0);
+    position: fixed;
+    pointer-events: none;
 }
 
 /* Optimize form card rendering */
@@ -46,7 +51,7 @@ html {
     }
 }
 
-/* Fix z-index stacking */
+/* Fix z-index stacking and overlaps */
 .top-bar {
     position: relative;
     z-index: 90;
@@ -63,10 +68,41 @@ html {
 
 .hero-content {
     z-index: 2;
+    position: relative;
+}
+
+.hero-content .container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Ensure buttons are clickable */
+.hero-cta {
+    position: relative;
+    z-index: 15;
+    padding-bottom: 2rem;
+}
+
+.hero-cta .btn {
+    position: relative;
+    z-index: 20;
 }
 
 .mobile-nav {
     z-index: 200 !important;
+}
+
+/* Fix section overlap */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+.fitness-components {
+    position: relative;
+    z-index: 5;
+    background-color: var(--bg-darker);
+    margin-top: -1px; /* Prevent gap */
 }
 
 /* Optimize section transitions */
