@@ -51,17 +51,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Sticky Header Enhancement
+    // Sticky Header Enhancement - Optimized
     let lastScroll = 0;
+    let headerTicking = false;
     const header = document.querySelector('.main-header');
     const topBar = document.querySelector('.top-bar');
     
-    window.addEventListener('scroll', function() {
+    function updateHeader() {
         const currentScroll = window.pageYOffset;
         
         if (currentScroll <= 0) {
             header.classList.remove('scroll-up');
             if (topBar) topBar.style.transform = 'translateY(0)';
+            headerTicking = false;
             return;
         }
         
@@ -78,7 +80,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         lastScroll = currentScroll;
-    });
+        headerTicking = false;
+    }
+    
+    window.addEventListener('scroll', function() {
+        if (!headerTicking) {
+            window.requestAnimationFrame(updateHeader);
+            headerTicking = true;
+        }
+    }, { passive: true });
     
     // Back to Top Button
     const backToTop = document.querySelector('.back-to-top');
@@ -208,14 +218,30 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
     
-    // Parallax Effect for Hero Section
+    // Parallax Effect for Hero Section - Optimized to prevent stuttering
     const heroSection = document.querySelector('.hero-main');
     if (heroSection) {
-        window.addEventListener('scroll', function() {
+        let ticking = false;
+        function updateParallax() {
             const scrolled = window.pageYOffset;
-            const parallaxSpeed = 0.5;
-            heroSection.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-        });
+            const heroHeight = heroSection.offsetHeight;
+            // Only apply parallax when hero is in viewport
+            if (scrolled < heroHeight) {
+                const parallaxSpeed = 0.3; // Reduced speed for smoother effect
+                heroSection.style.transform = `translate3d(0, ${scrolled * parallaxSpeed}px, 0)`;
+                heroSection.style.willChange = 'transform';
+            } else {
+                heroSection.style.willChange = 'auto';
+            }
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }, { passive: true });
     }
     
     // Number Counter Animation

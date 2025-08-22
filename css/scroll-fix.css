@@ -1,0 +1,154 @@
+/* Scroll Performance Optimization Fixes */
+
+/* Prevent layout shifts and improve rendering performance */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for hero section stuttering */
+.hero-main {
+    contain: layout style paint;
+    isolation: isolate;
+}
+
+.hero-main::before {
+    will-change: auto;
+    transform: translateZ(0);
+}
+
+/* Optimize form card rendering */
+.form-card {
+    contain: layout style;
+    will-change: auto;
+}
+
+/* Prevent form from blocking content */
+.hero-form {
+    position: relative;
+    z-index: 10;
+    contain: layout;
+}
+
+/* Smooth scrolling optimization */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for sticky header */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .hero-main {
+        transform: none !important;
+    }
+}
+
+/* Fix z-index stacking */
+.top-bar {
+    position: relative;
+    z-index: 90;
+}
+
+.main-header {
+    z-index: 100 !important;
+}
+
+.hero-overlay {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.mobile-nav {
+    z-index: 200 !important;
+}
+
+/* Optimize section transitions */
+.fitness-components,
+.programs,
+.locations-preview,
+.success-stories,
+.blog-preview,
+.cta-section {
+    contain: layout style;
+    transform: translateZ(0);
+}
+
+/* Improve card hover performance */
+.program-card,
+.location-card,
+.testimonial-card,
+.blog-card {
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.program-card:hover,
+.location-card:hover,
+.testimonial-card:hover,
+.blog-card:hover {
+    transform: translateY(-5px) translateZ(0);
+}
+
+/* Fix mobile menu performance */
+.mobile-nav {
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+/* Optimize animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* GPU acceleration for frequently animated elements */
+.btn,
+.back-to-top {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Fix for form input focus */
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Prevent content jump on scroll */
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overscroll-behavior-y: none;
+}
+
+/* Fix sticky header scroll performance */
+.main-header.scroll-down {
+    transform: translate3d(0, -100%, 0);
+}
+
+.main-header.scroll-up {
+    transform: translate3d(0, 0, 0);
+}

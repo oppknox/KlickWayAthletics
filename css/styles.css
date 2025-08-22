@@ -173,8 +173,11 @@ h6 { font-size: 1rem; }
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     box-shadow: var(--shadow-md);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
 }
 
 .header-content {
@@ -376,6 +379,8 @@ h6 { font-size: 1rem; }
     align-items: center;
     background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
     overflow: hidden;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .hero-main::before {
@@ -406,6 +411,8 @@ h6 { font-size: 1rem; }
     position: relative;
     z-index: 3;
     width: 100%;
+    padding: 2rem 0;
+    transform: translateZ(0);
 }
 
 .hero-grid {
@@ -465,6 +472,9 @@ h6 { font-size: 1rem; }
     border-radius: 8px;
     box-shadow: var(--shadow-xl);
     border: 1px solid rgba(224, 31, 38, 0.2);
+    position: relative;
+    z-index: 1;
+    transform: translateZ(0);
 }
 
 .form-title {
