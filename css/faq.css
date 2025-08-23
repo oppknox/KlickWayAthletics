@@ -1,0 +1,179 @@
+/* ===== FAQ SECTION STYLES ===== */
+
+.faq-section {
+    padding: 5rem 0;
+    background-color: var(--bg-darker);
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+}
+
+.faq-item {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition-base);
+}
+
+.faq-item:hover {
+    border-color: rgba(224, 31, 38, 0.3);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition-base);
+}
+
+.faq-question:hover {
+    color: var(--primary-color);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.faq-question[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] + .faq-answer {
+    max-height: 1000px;
+    padding: 0 2rem 2rem;
+}
+
+.faq-answer p {
+    color: var(--light-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== GYM HOURS TABLE STYLES ===== */
+
+.hours-wrap {
+    position: relative;
+    background: #16161a;
+    border-radius: 16px;
+    padding: 28px 20px;
+    overflow-x: auto;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.04) inset, 0 8px 24px rgba(0,0,0,0.35);
+    margin-top: 1rem;
+}
+
+/* Red vertical badge - removed per request */
+
+/* Hours Table */
+.hours-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: var(--text);
+    min-width: 760px;
+}
+
+.hours-table thead th {
+    text-align: left;
+    font: 700 0.9rem/1.2 Inter, system-ui, Arial, sans-serif;
+    color: #c9cbd1;
+    padding: 14px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #24242a;
+    white-space: nowrap;
+}
+
+.hours-table .col-location {
+    width: 180px;
+}
+
+.hours-table tbody th.location {
+    text-align: left;
+    font: 800 0.95rem/1.2 Inter, system-ui, Arial, sans-serif;
+    letter-spacing: 0.08em;
+    color: #dfe1e6;
+    padding: 14px;
+    border-bottom: 1px solid #24242a;
+    white-space: nowrap;
+}
+
+.hours-table td {
+    padding: 14px;
+    border-bottom: 1px solid #24242a;
+    color: var(--light-gray);
+    font: 600 0.95rem/1.2 Inter, system-ui, Arial, sans-serif;
+    white-space: nowrap;
+}
+
+/* Column separation */
+.hours-table td + td,
+.hours-table th + th {
+    border-left: 1px solid #1e1e24;
+}
+
+/* Hover effect */
+.hours-table tbody tr:hover td,
+.hours-table tbody tr:hover th.location {
+    background: #1b1b21;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-container {
+        margin-top: 2rem;
+    }
+    
+    .faq-question {
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .faq-question[aria-expanded="true"] + .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+    }
+    
+    .hours-wrap {
+        padding: 20px 15px;
+    }
+    
+    .hours-table .col-location {
+        width: 150px;
+    }
+    
+    .hours-table thead th,
+    .hours-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hours-wrap {
+        padding: 15px 10px;
+    }
+    
+    .hours-table .col-location {
+        width: 120px;
+    }
+}

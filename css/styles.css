@@ -441,8 +441,16 @@ h6 { font-size: 1rem; }
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--light-gray);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-weight: 500;
+}
+
+.hero-body-copy {
+    font-size: 1.1rem;
+    color: var(--medium-gray);
+    margin-bottom: 2rem;
+    line-height: 1.7;
 }
 
 .hero-features {
