@@ -1,0 +1,389 @@
+/* ===== CAREERS PAGE STYLES ===== */
+
+/* Page Hero */
+.page-hero {
+    position: relative;
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.careers-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+                      url('../img/DJI_20250318065304_0305_D.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    z-index: 1;
+}
+
+.page-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero .hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-hero .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    transition: var(--transition-base);
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-hover);
+}
+
+/* Careers Intro */
+.careers-intro {
+    padding: 4rem 0;
+    background-color: var(--bg-darker);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Mission & Values Section */
+.mission-values {
+    padding: 5rem 0;
+    background-color: var(--bg-dark);
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.mission-card,
+.vision-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(26, 26, 26, 0.95) 100%);
+    padding: 3rem;
+    border-radius: 8px;
+    border: 1px solid rgba(224, 31, 38, 0.2);
+    transition: var(--transition-base);
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(224, 31, 38, 0.2);
+    border-color: var(--primary-color);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mission-text,
+.vision-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--light-gray);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.placeholder-text {
+    color: var(--medium-gray);
+    font-style: italic;
+}
+
+/* Why Work With Us */
+.why-work-with-us {
+    padding: 5rem 0;
+    background-color: var(--bg-darker);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.benefit-card p {
+    color: var(--light-gray);
+    line-height: 1.6;
+}
+
+/* Company Culture Gallery */
+.company-culture {
+    padding: 5rem 0;
+    background-color: var(--bg-dark);
+}
+
+.culture-gallery {
+    margin-top: 3rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.placeholder-image {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-darker) 100%);
+    border: 2px dashed var(--dark-gray);
+}
+
+.placeholder-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    color: var(--medium-gray);
+}
+
+.placeholder-overlay i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.placeholder-overlay p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gallery-note {
+    text-align: center;
+    color: var(--medium-gray);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.gallery-note i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Current Openings Section */
+.current-openings {
+    padding: 5rem 0;
+    background-color: var(--bg-darker);
+}
+
+.bamboohr-widget {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+    min-height: 400px;
+    box-shadow: var(--shadow-xl);
+}
+
+#BambooHR {
+    width: 100%;
+    min-height: 400px;
+}
+
+.openings-fallback {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.fallback-message {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--light-gray);
+    display: inline-block;
+}
+
+.fallback-message a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.fallback-message a:hover {
+    color: var(--primary-hover);
+}
+
+/* Careers CTA */
+.careers-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%);
+    text-align: center;
+}
+
+.careers-cta .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.careers-cta .cta-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.careers-cta .cta-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2rem;
+}
+
+.careers-cta .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.careers-cta .btn i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .careers-cta .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .careers-cta .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

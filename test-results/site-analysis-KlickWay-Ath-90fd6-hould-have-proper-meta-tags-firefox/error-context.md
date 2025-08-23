@@ -1,0 +1,505 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: 
+      - text: Winner - Best Training Facility in Washington
+    - generic [ref=e8]:
+      - link " (206) 555-0100" [ref=e9] [cursor=pointer]:
+        - /url: tel:206-555-0100
+        - generic [ref=e10] [cursor=pointer]: 
+        - text: (206) 555-0100
+      - generic [ref=e11]:
+        - link "Instagram" [ref=e12] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e13] [cursor=pointer]: 
+        - link "Facebook" [ref=e14] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e15] [cursor=pointer]: 
+        - link "YouTube" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e17] [cursor=pointer]: 
+  - banner [ref=e18]:
+    - generic [ref=e20]:
+      - link "KlickWay Athletics" [ref=e22] [cursor=pointer]:
+        - /url: index.html
+        - img "KlickWay Athletics" [ref=e23] [cursor=pointer]
+      - navigation [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - link "Home" [ref=e27] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e28]:
+            - link "Classes " [ref=e29] [cursor=pointer]:
+              - /url: classes.html
+              - text: Classes
+              - generic [ref=e30] [cursor=pointer]: 
+          - listitem [ref=e31]:
+            - link "Locations " [ref=e32] [cursor=pointer]:
+              - /url: locations.html
+              - text: Locations
+              - generic [ref=e33] [cursor=pointer]: 
+          - listitem [ref=e34]:
+            - link "Blog" [ref=e35] [cursor=pointer]:
+              - /url: blog.html
+          - listitem [ref=e36]:
+            - link "Nutrition Coaching" [ref=e37] [cursor=pointer]:
+              - /url: nutrition-coaching.html
+          - listitem [ref=e38]:
+            - link "Shop" [ref=e39] [cursor=pointer]:
+              - /url: shop.html
+          - listitem [ref=e40]:
+            - link "Join Now" [ref=e41] [cursor=pointer]:
+              - /url: join-now.html
+  - navigation [ref=e42]:
+    - generic [ref=e43]:
+      - img "KlickWay Athletics" [ref=e44]
+      - button "Close Menu" [ref=e45] [cursor=pointer]:
+        - generic [ref=e46] [cursor=pointer]: 
+    - list [ref=e47]:
+      - listitem [ref=e48]:
+        - link "Home" [ref=e49] [cursor=pointer]:
+          - /url: index.html
+      - listitem [ref=e50]:
+        - link "Classes +" [ref=e51] [cursor=pointer]:
+          - /url: "#"
+          - text: Classes
+          - generic [ref=e52] [cursor=pointer]: +
+      - listitem [ref=e53]:
+        - link "Locations +" [ref=e54] [cursor=pointer]:
+          - /url: "#"
+          - text: Locations
+          - generic [ref=e55] [cursor=pointer]: +
+      - listitem [ref=e56]:
+        - link "Blog" [ref=e57] [cursor=pointer]:
+          - /url: blog.html
+      - listitem [ref=e58]:
+        - link "Nutrition Coaching" [ref=e59] [cursor=pointer]:
+          - /url: nutrition-coaching.html
+      - listitem [ref=e60]:
+        - link "Shop" [ref=e61] [cursor=pointer]:
+          - /url: shop.html
+      - listitem [ref=e62]:
+        - link "Join Now" [ref=e63] [cursor=pointer]:
+          - /url: join-now.html
+  - generic [ref=e68]:
+    - generic [ref=e69]:
+      - heading "Help Members Realize Their Most Passionate KlickWay Athletics" [level=1] [ref=e70]:
+        - text: Help Members Realize Their Most Passionate
+        - generic [ref=e71]: KlickWay Athletics
+      - paragraph [ref=e72]: Join KlickWay Athletics and transform your fitness journey with personalized training, expert nutrition coaching, and a supportive community across four Washington locations.
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: 
+          - generic [ref=e76]: 24-Hour Access (Weekdays)
+        - generic [ref=e77]:
+          - generic [ref=e78]: 
+          - generic [ref=e79]: Expert Personal Trainers
+        - generic [ref=e80]:
+          - generic [ref=e81]: 
+          - generic [ref=e82]: Science-Based Nutrition
+      - generic [ref=e83]:
+        - link "Start Your 7-Day Free Trial" [ref=e84] [cursor=pointer]:
+          - /url: "#free-trial"
+        - link "Find Your Location" [ref=e85] [cursor=pointer]:
+          - /url: locations.html
+    - generic [ref=e87]:
+      - heading "Try Us For 7 Days FREE" [level=3] [ref=e88]
+      - paragraph [ref=e89]: No commitment. No credit card required.
+      - generic [ref=e90]:
+        - textbox "First Name*" [ref=e92]
+        - textbox "Last Name*" [ref=e94]
+        - textbox "Email*" [ref=e96]
+        - textbox "Phone*" [ref=e98]
+        - combobox [ref=e100] [cursor=pointer]:
+          - option "Select Location*" [selected]
+          - option "Everett"
+          - option "Renton"
+          - option "Marysville"
+          - option "Seattle"
+        - combobox [ref=e102] [cursor=pointer]:
+          - option "What's Your Goal?" [selected]
+          - option "Weight Loss"
+          - option "Muscle Gain"
+          - option "Strength Training"
+          - option "Competition Prep"
+          - option "General Fitness"
+        - button "Get Your Free Pass" [ref=e103] [cursor=pointer]
+        - paragraph [ref=e104]: By submitting, you agree to receive communications from KlickWay Athletics.
+  - generic [ref=e106]:
+    - generic [ref=e107]:
+      - heading "Our Six Components Approach to Fitness" [level=2] [ref=e108]
+      - paragraph [ref=e109]: A comprehensive methodology that ensures balanced development and sustainable results
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e113]: 
+        - heading "Strength Training" [level=3] [ref=e114]
+        - paragraph [ref=e115]: Build lean muscle and increase overall strength with progressive overload techniques
+      - generic [ref=e116]:
+        - generic [ref=e118]: 
+        - heading "Cardiovascular Health" [level=3] [ref=e119]
+        - paragraph [ref=e120]: Improve heart health and endurance through varied cardio programming
+      - generic [ref=e121]:
+        - generic [ref=e123]: 
+        - heading "Flexibility & Mobility" [level=3] [ref=e124]
+        - paragraph [ref=e125]: Enhance range of motion and prevent injuries with targeted mobility work
+      - generic [ref=e126]:
+        - generic [ref=e128]: 
+        - heading "Nutrition Coaching" [level=3] [ref=e129]
+        - paragraph [ref=e130]: Fuel your body properly with personalized nutrition plans and guidance
+      - generic [ref=e131]:
+        - generic [ref=e133]: 
+        - heading "Mental Wellness" [level=3] [ref=e134]
+        - paragraph [ref=e135]: Develop mental resilience and positive habits for long-term success
+      - generic [ref=e136]:
+        - generic [ref=e138]: 
+        - heading "Recovery & Rest" [level=3] [ref=e139]
+        - paragraph [ref=e140]: Optimize recovery with proper rest protocols and recovery strategies
+  - generic [ref=e142]:
+    - generic [ref=e143]:
+      - heading "Transform Your Life With Our Programs" [level=2] [ref=e144]
+      - paragraph [ref=e145]: Choose from our variety of expert-led fitness programs
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - img "Boot Camp Training" [ref=e149]
+          - generic [ref=e150]: Most Popular
+        - generic [ref=e151]:
+          - heading "Boot Camp" [level=3] [ref=e152]
+          - paragraph [ref=e153]: High-intensity group training that burns calories and builds community
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - generic [ref=e156]: 
+              - text: 45-minute sessions
+            - listitem [ref=e157]:
+              - generic [ref=e158]: 
+              - text: All fitness levels welcome
+            - listitem [ref=e159]:
+              - generic [ref=e160]: 
+              - text: Certified instructors
+          - link "Learn More" [ref=e161] [cursor=pointer]:
+            - /url: boot-camp.html
+      - generic [ref=e162]:
+        - img "Personal Training" [ref=e164]
+        - generic [ref=e165]:
+          - heading "Personal Training" [level=3] [ref=e166]
+          - paragraph [ref=e167]: One-on-one coaching tailored to your specific goals and needs
+          - list [ref=e168]:
+            - listitem [ref=e169]:
+              - generic [ref=e170]: 
+              - text: Customized workout plans
+            - listitem [ref=e171]:
+              - generic [ref=e172]: 
+              - text: Flexible scheduling
+            - listitem [ref=e173]:
+              - generic [ref=e174]: 
+              - text: Progress tracking
+          - link "Learn More" [ref=e175] [cursor=pointer]:
+            - /url: personal-training.html
+      - generic [ref=e176]:
+        - img "Nutrition Coaching" [ref=e178]
+        - generic [ref=e179]:
+          - heading "Nutrition Coaching" [level=3] [ref=e180]
+          - paragraph [ref=e181]: Science-based nutrition guidance for sustainable lifestyle changes
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - generic [ref=e184]: 
+              - text: Personalized meal plans
+            - listitem [ref=e185]:
+              - generic [ref=e186]: 
+              - text: Weekly check-ins
+            - listitem [ref=e187]:
+              - generic [ref=e188]: 
+              - text: Habit-based approach
+          - link "Learn More" [ref=e189] [cursor=pointer]:
+            - /url: nutrition-coaching.html
+      - generic [ref=e190]:
+        - img "Contest Prep" [ref=e192]
+        - generic [ref=e193]:
+          - heading "Contest Prep" [level=3] [ref=e194]
+          - paragraph [ref=e195]: Comprehensive competition preparation for bodybuilding and physique
+          - list [ref=e196]:
+            - listitem [ref=e197]:
+              - generic [ref=e198]: 
+              - text: Posing practice
+            - listitem [ref=e199]:
+              - generic [ref=e200]: 
+              - text: Peak week protocols
+            - listitem [ref=e201]:
+              - generic [ref=e202]: 
+              - text: Stage presence coaching
+          - link "Learn More" [ref=e203] [cursor=pointer]:
+            - /url: contest-prep.html
+  - generic [ref=e205]:
+    - generic [ref=e206]:
+      - heading "Four Convenient Locations to Serve You" [level=2] [ref=e207]
+      - paragraph [ref=e208]: State-of-the-art facilities across Washington
+    - generic [ref=e209]:
+      - generic [ref=e210]:
+        - generic [ref=e211]:
+          - heading "Everett" [level=3] [ref=e212]
+          - generic [ref=e213]: 24/7
+        - generic [ref=e214]:
+          - paragraph [ref=e215]:
+            - generic [ref=e216]: 
+            - text: 123 Main Street, Everett, WA 98201
+          - paragraph [ref=e217]:
+            - generic [ref=e218]: 
+            - link "(425) 555-0101" [ref=e219] [cursor=pointer]:
+              - /url: tel:425-555-0101
+          - generic [ref=e220]:
+            - paragraph [ref=e221]:
+              - strong [ref=e222]: "Hours:"
+            - paragraph [ref=e223]: "Mon-Fri: 24 Hours"
+            - paragraph [ref=e224]: "Sat: 5am - 8pm"
+            - paragraph [ref=e225]: "Sun: 8am - 8pm"
+          - link "View Details" [ref=e226] [cursor=pointer]:
+            - /url: locations/everett.html
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - heading "Renton" [level=3] [ref=e229]
+          - generic [ref=e230]: 24/7
+        - generic [ref=e231]:
+          - paragraph [ref=e232]:
+            - generic [ref=e233]: 
+            - text: 456 Valley Rd, Renton, WA 98057
+          - paragraph [ref=e234]:
+            - generic [ref=e235]: 
+            - link "(425) 555-0102" [ref=e236] [cursor=pointer]:
+              - /url: tel:425-555-0102
+          - generic [ref=e237]:
+            - paragraph [ref=e238]:
+              - strong [ref=e239]: "Hours:"
+            - paragraph [ref=e240]: "Mon-Fri: 24 Hours"
+            - paragraph [ref=e241]: "Sat-Sun: 8am - 8pm"
+          - link "View Details" [ref=e242] [cursor=pointer]:
+            - /url: locations/renton.html
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - heading "Marysville" [level=3] [ref=e245]
+          - generic [ref=e246]: 24/7
+        - generic [ref=e247]:
+          - paragraph [ref=e248]:
+            - generic [ref=e249]: 
+            - text: 789 State Ave, Marysville, WA 98270
+          - paragraph [ref=e250]:
+            - generic [ref=e251]: 
+            - link "(360) 555-0103" [ref=e252] [cursor=pointer]:
+              - /url: tel:360-555-0103
+          - generic [ref=e253]:
+            - paragraph [ref=e254]:
+              - strong [ref=e255]: "Hours:"
+            - paragraph [ref=e256]: "Mon-Fri: 24 Hours"
+            - paragraph [ref=e257]: "Sat: 5am - 8pm"
+            - paragraph [ref=e258]: "Sun: 8am - 8pm"
+          - link "View Details" [ref=e259] [cursor=pointer]:
+            - /url: locations/marysville.html
+      - generic [ref=e260]:
+        - generic [ref=e261]:
+          - heading "Seattle" [level=3] [ref=e262]
+          - generic [ref=e263]: 24/7
+        - generic [ref=e264]:
+          - paragraph [ref=e265]:
+            - generic [ref=e266]: 
+            - text: 321 Pike St, Seattle, WA 98101
+          - paragraph [ref=e267]:
+            - generic [ref=e268]: 
+            - link "(206) 555-0104" [ref=e269] [cursor=pointer]:
+              - /url: tel:206-555-0104
+          - generic [ref=e270]:
+            - paragraph [ref=e271]:
+              - strong [ref=e272]: Opening January 2025
+            - paragraph [ref=e273]: Pre-registration available
+          - link "Learn More" [ref=e274] [cursor=pointer]:
+            - /url: locations/seattle.html
+    - link "View All Locations" [ref=e276] [cursor=pointer]:
+      - /url: locations.html
+  - generic [ref=e278]:
+    - generic [ref=e279]:
+      - heading "Real Results From Real Members" [level=2] [ref=e280]
+      - paragraph [ref=e281]: See what our members have achieved
+    - generic [ref=e282]:
+      - generic [ref=e283]:
+        - img "Member Success" [ref=e285]
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - generic [ref=e288]: 
+            - generic [ref=e289]: 
+            - generic [ref=e290]: 
+            - generic [ref=e291]: 
+            - generic [ref=e292]: 
+          - paragraph [ref=e293]: "\"KlickWay Athletics changed my life. I lost 45 pounds and gained confidence I never knew I had. The trainers are incredible!\""
+          - generic [ref=e294]:
+            - strong [ref=e295]: Sarah M.
+            - generic [ref=e296]: Lost 45 lbs in 6 months
+      - generic [ref=e297]:
+        - img "Member Success" [ref=e299]
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - generic [ref=e302]: 
+            - generic [ref=e303]: 
+            - generic [ref=e304]: 
+            - generic [ref=e305]: 
+            - generic [ref=e306]: 
+          - paragraph [ref=e307]: "\"The contest prep team at KlickWay helped me win my first bodybuilding competition. Their expertise is unmatched!\""
+          - generic [ref=e308]:
+            - strong [ref=e309]: Mike R.
+            - generic [ref=e310]: Competition Winner
+      - generic [ref=e311]:
+        - img "Member Success" [ref=e313]
+        - generic [ref=e314]:
+          - generic [ref=e315]:
+            - generic [ref=e316]: 
+            - generic [ref=e317]: 
+            - generic [ref=e318]: 
+            - generic [ref=e319]: 
+            - generic [ref=e320]: 
+          - paragraph [ref=e321]: "\"The nutrition coaching program taught me how to eat for my goals. I'm stronger and healthier than ever at 50!\""
+          - generic [ref=e322]:
+            - strong [ref=e323]: Jennifer L.
+            - generic [ref=e324]: Nutrition Success Story
+  - generic [ref=e326]:
+    - generic [ref=e327]:
+      - heading "Latest From Our Blog" [level=2] [ref=e328]
+      - paragraph [ref=e329]: Tips, insights, and motivation for your fitness journey
+    - generic [ref=e330]:
+      - article [ref=e331]:
+        - generic [ref=e332]:
+          - img "Blog Post" [ref=e333]
+          - generic [ref=e334]: Nutrition
+        - generic [ref=e335]:
+          - heading "5 Superfoods to Boost Your Workout Performance" [level=3] [ref=e336]:
+            - link "5 Superfoods to Boost Your Workout Performance" [ref=e337] [cursor=pointer]:
+              - /url: blog/post-1.html
+          - paragraph [ref=e338]: Discover the power-packed foods that can take your training to the next level...
+          - generic [ref=e339]:
+            - generic [ref=e340]:
+              - generic [ref=e341]: 
+              - text: January 15, 2025
+            - generic [ref=e342]:
+              - generic [ref=e343]: 
+              - text: 5 min read
+      - article [ref=e344]:
+        - generic [ref=e345]:
+          - img "Blog Post" [ref=e346]
+          - generic [ref=e347]: Training
+        - generic [ref=e348]:
+          - 'heading "Winter Workout Strategies: Stay Fit During Cold Months" [level=3] [ref=e349]':
+            - 'link "Winter Workout Strategies: Stay Fit During Cold Months" [ref=e350] [cursor=pointer]':
+              - /url: blog/post-2.html
+          - paragraph [ref=e351]: Don't let the cold weather derail your fitness goals. Here's how to adapt...
+          - generic [ref=e352]:
+            - generic [ref=e353]:
+              - generic [ref=e354]: 
+              - text: January 10, 2025
+            - generic [ref=e355]:
+              - generic [ref=e356]: 
+              - text: 7 min read
+      - article [ref=e357]:
+        - generic [ref=e358]:
+          - img "Blog Post" [ref=e359]
+          - generic [ref=e360]: Wellness
+        - generic [ref=e361]:
+          - heading "The Mind-Body Connection in Fitness" [level=3] [ref=e362]:
+            - link "The Mind-Body Connection in Fitness" [ref=e363] [cursor=pointer]:
+              - /url: blog/post-3.html
+          - paragraph [ref=e364]: Understanding how mental wellness impacts your physical performance...
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - generic [ref=e367]: 
+              - text: January 5, 2025
+            - generic [ref=e368]:
+              - generic [ref=e369]: 
+              - text: 6 min read
+    - link "View All Articles" [ref=e371] [cursor=pointer]:
+      - /url: blog.html
+  - generic [ref=e374]:
+    - heading "Ready to Start Your Fitness Journey?" [level=2] [ref=e375]
+    - paragraph [ref=e376]: Join thousands of members who have transformed their lives at KlickWay Athletics
+    - generic [ref=e377]:
+      - link "Get Your Free 7-Day Pass" [ref=e378] [cursor=pointer]:
+        - /url: "#free-trial"
+      - link "Schedule a Tour" [ref=e379] [cursor=pointer]:
+        - /url: schedule-tour.html
+  - contentinfo [ref=e380]:
+    - generic [ref=e381]:
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - img "KlickWay Athletics" [ref=e384]
+          - paragraph [ref=e385]: KlickWay Athletics offers the perfect blend of state-of-the-art facilities and expert coaching to help you unlock your potential.
+          - generic [ref=e386]:
+            - link "Facebook" [ref=e387] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e388] [cursor=pointer]: 
+            - link "Instagram" [ref=e389] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e390] [cursor=pointer]: 
+            - link "YouTube" [ref=e391] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e392] [cursor=pointer]: 
+            - link "Twitter" [ref=e393] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e394] [cursor=pointer]: 
+        - generic [ref=e395]:
+          - heading "Quick Links" [level=4] [ref=e396]
+          - list [ref=e397]:
+            - listitem [ref=e398]:
+              - link "About Us" [ref=e399] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e400]:
+              - link "Classes" [ref=e401] [cursor=pointer]:
+                - /url: classes.html
+            - listitem [ref=e402]:
+              - link "Personal Training" [ref=e403] [cursor=pointer]:
+                - /url: personal-training.html
+            - listitem [ref=e404]:
+              - link "Nutrition Coaching" [ref=e405] [cursor=pointer]:
+                - /url: nutrition-coaching.html
+            - listitem [ref=e406]:
+              - link "Blog" [ref=e407] [cursor=pointer]:
+                - /url: blog.html
+            - listitem [ref=e408]:
+              - link "Shop" [ref=e409] [cursor=pointer]:
+                - /url: shop.html
+        - generic [ref=e410]:
+          - heading "Our Locations" [level=4] [ref=e411]
+          - list [ref=e412]:
+            - listitem [ref=e413]:
+              - link "Everett" [ref=e414] [cursor=pointer]:
+                - /url: locations/everett.html
+            - listitem [ref=e415]:
+              - link "Renton" [ref=e416] [cursor=pointer]:
+                - /url: locations/renton.html
+            - listitem [ref=e417]:
+              - link "Marysville" [ref=e418] [cursor=pointer]:
+                - /url: locations/marysville.html
+            - listitem [ref=e419]:
+              - link "Seattle (24/7)" [ref=e420] [cursor=pointer]:
+                - /url: locations/seattle.html
+        - generic [ref=e421]:
+          - heading "Get In Touch" [level=4] [ref=e422]
+          - generic [ref=e423]:
+            - paragraph [ref=e424]:
+              - generic [ref=e425]: 
+              - link "(206) 555-0100" [ref=e426] [cursor=pointer]:
+                - /url: tel:206-555-0100
+            - paragraph [ref=e427]:
+              - generic [ref=e428]: 
+              - link "info@klickwayathletics.com" [ref=e429] [cursor=pointer]:
+                - /url: mailto:info@klickwayathletics.com
+            - paragraph [ref=e430]:
+              - generic [ref=e431]: 
+              - text: "Mon-Fri: 24 Hours"
+              - text: "Sat-Sun: Varies by Location"
+      - generic [ref=e433]:
+        - paragraph [ref=e434]: © 2025 KlickWay Athletics. All Rights Reserved.
+        - generic [ref=e435]:
+          - link "Privacy Policy" [ref=e436] [cursor=pointer]:
+            - /url: privacy-policy.html
+          - link "Terms of Service" [ref=e437] [cursor=pointer]:
+            - /url: terms-of-service.html
+          - link "Membership Agreement" [ref=e438] [cursor=pointer]:
+            - /url: membership-agreement.html
+```

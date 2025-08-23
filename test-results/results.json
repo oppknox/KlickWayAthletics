@@ -1,0 +1,4276 @@
+{
+  "config": {
+    "configFile": "C:\\dev\\KlickWayAthleticsClientWebsite\\playwright.config.js",
+    "rootDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/dev/KlickWayAthleticsClientWebsite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/KlickWayAthleticsClientWebsite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/KlickWayAthleticsClientWebsite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/KlickWayAthleticsClientWebsite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/KlickWayAthleticsClientWebsite/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "C:/dev/KlickWayAthleticsClientWebsite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 6,
+    "webServer": {
+      "command": "npx http-server -p 8080",
+      "port": 8080,
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "improvements-scanner.spec.js",
+      "file": "improvements-scanner.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Website Improvement Scanner",
+          "file": "improvements-scanner.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "scan for missing modern features",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2058,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:00.271Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-5a09c8ff139b66ffe186",
+              "file": "improvements-scanner.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "scan for UX improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2082,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:00.407Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-8f6d0ff214883ff185aa",
+              "file": "improvements-scanner.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "scan for accessibility improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2282,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:00.275Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-734c9f4cc5daddf87095",
+              "file": "improvements-scanner.spec.js",
+              "line": 163,
+              "column": 3
+            },
+            {
+              "title": "scan for SEO improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2621,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:00.211Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-48d2d5466c00f86cb8b5",
+              "file": "improvements-scanner.spec.js",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "scan for security improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2276,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:00.272Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-0c8115e826ec60e8d423",
+              "file": "improvements-scanner.spec.js",
+              "line": 297,
+              "column": 3
+            },
+            {
+              "title": "scan for missing modern features",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3353,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:08.504Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-3ec8688b43a82775ec74",
+              "file": "improvements-scanner.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "scan for UX improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4805,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:08.677Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-f07453eebc6cfe077daf",
+              "file": "improvements-scanner.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "scan for accessibility improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6720,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:08.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-e3629a4b6e4d1046b783",
+              "file": "improvements-scanner.spec.js",
+              "line": 163,
+              "column": 3
+            },
+            {
+              "title": "scan for SEO improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 7223,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:09.874Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-bed9b927e26b86527dd7",
+              "file": "improvements-scanner.spec.js",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "scan for security improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9192,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:10.300Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-a37681f80fb1cbbca866",
+              "file": "improvements-scanner.spec.js",
+              "line": 297,
+              "column": 3
+            },
+            {
+              "title": "scan for missing modern features",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3580,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:29.370Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-ac3bc3df2849c8bf3a34",
+              "file": "improvements-scanner.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "scan for UX improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3773,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:29.765Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-c291b20e8cb9d020c129",
+              "file": "improvements-scanner.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "scan for accessibility improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 3783,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:29.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-14ebb06755872e1ad85d",
+              "file": "improvements-scanner.spec.js",
+              "line": 163,
+              "column": 3
+            },
+            {
+              "title": "scan for SEO improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3659,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:30.099Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-da1c3af212e2378dfc36",
+              "file": "improvements-scanner.spec.js",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "scan for security improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3738,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:29.405Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-c626dc5853bdb0c4f660",
+              "file": "improvements-scanner.spec.js",
+              "line": 297,
+              "column": 3
+            },
+            {
+              "title": "scan for missing modern features",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1770,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:42.139Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-09dbfca867b3283c23f2",
+              "file": "improvements-scanner.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "scan for UX improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1610,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:42.583Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-cc22a8e1406d7eb16155",
+              "file": "improvements-scanner.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "scan for accessibility improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1783,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:43.787Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-353a437a925bbb278d27",
+              "file": "improvements-scanner.spec.js",
+              "line": 163,
+              "column": 3
+            },
+            {
+              "title": "scan for SEO improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2375,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:44.319Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-6677332b59b75e3cb0cf",
+              "file": "improvements-scanner.spec.js",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "scan for security improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1915,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:44.333Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-e575444a4977a8016478",
+              "file": "improvements-scanner.spec.js",
+              "line": 297,
+              "column": 3
+            },
+            {
+              "title": "scan for missing modern features",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2307,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:51.844Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-d04fb6e03fd813e84a4d",
+              "file": "improvements-scanner.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "scan for UX improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2380,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:51.865Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-d3cd1ee5c9b1b27ed0cb",
+              "file": "improvements-scanner.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "scan for accessibility improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2368,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:52.297Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-d49b311e26ec468d6f56",
+              "file": "improvements-scanner.spec.js",
+              "line": 163,
+              "column": 3
+            },
+            {
+              "title": "scan for SEO improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2696,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:55.650Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-d37e26c11ee8eda9207e",
+              "file": "improvements-scanner.spec.js",
+              "line": 235,
+              "column": 3
+            },
+            {
+              "title": "scan for security improvements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 2507,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nImprovement report generated: C:\\dev\\KlickWayAthleticsClientWebsite\\improvement-report.md\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:56.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f162a20045e55dedd2f9-9183038ac3fed98cd87a",
+              "file": "improvements-scanner.spec.js",
+              "line": 297,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "site-analysis.spec.js",
+      "file": "site-analysis.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "KlickWay Athletics Site Analysis",
+          "file": "site-analysis.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Performance & Core Web Vitals",
+              "file": "site-analysis.spec.js",
+              "line": 8,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should load within acceptable time",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 1905,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Page load time: 109ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:00.331Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-a69346f80a7ccaf11687",
+                  "file": "site-analysis.spec.js",
+                  "line": 9,
+                  "column": 5
+                },
+                {
+                  "title": "should have optimized images",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 1626,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 10 potentially oversized images\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design_1.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/FB9A6574.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/DJI_20250318065304_0305_D.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Found 0 images without alt text\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:02.577Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-3854d2d3221e699b74a4",
+                  "file": "site-analysis.spec.js",
+                  "line": 18,
+                  "column": 5
+                },
+                {
+                  "title": "should load within acceptable time",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 7559,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Page load time: 195ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:10.529Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-0c72d15f4acb03c7c996",
+                  "file": "site-analysis.spec.js",
+                  "line": 9,
+                  "column": 5
+                },
+                {
+                  "title": "should have optimized images",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2265,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 10 potentially oversized images\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design_1.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/FB9A6574.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/DJI_20250318065304_0305_D.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Found 0 images without alt text\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:12.965Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-864f738612a9fdc291a9",
+                  "file": "site-analysis.spec.js",
+                  "line": 18,
+                  "column": 5
+                },
+                {
+                  "title": "should load within acceptable time",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 3547,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Page load time: 252ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:32.264Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-89d1381b178bbbc0ad8f",
+                  "file": "site-analysis.spec.js",
+                  "line": 9,
+                  "column": 5
+                },
+                {
+                  "title": "should have optimized images",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3297,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 10 potentially oversized images\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design_1.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/FB9A6574.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/DJI_20250318065304_0305_D.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Found 0 images without alt text\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:33.340Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-27a29e3eeccda5bf0103",
+                  "file": "site-analysis.spec.js",
+                  "line": 18,
+                  "column": 5
+                },
+                {
+                  "title": "should load within acceptable time",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 1935,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Page load time: 68ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:44.300Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-84dbcc4c0fd2e9a9b106",
+                  "file": "site-analysis.spec.js",
+                  "line": 9,
+                  "column": 5
+                },
+                {
+                  "title": "should have optimized images",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1720,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 10 potentially oversized images\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design_1.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/FB9A6574.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/DJI_20250318065304_0305_D.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Found 0 images without alt text\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:44.489Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-2f1757c7611e7042c31c",
+                  "file": "site-analysis.spec.js",
+                  "line": 18,
+                  "column": 5
+                },
+                {
+                  "title": "should load within acceptable time",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2460,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Page load time: 219ms\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:54.408Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-0cfb12cf09c5dbdcc8e7",
+                  "file": "site-analysis.spec.js",
+                  "line": 9,
+                  "column": 5
+                },
+                {
+                  "title": "should have optimized images",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2470,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 10 potentially oversized images\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design_1.png\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/FB9A6574.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/WhatsApp_Image_2025-03-02_at_1.48.48_AM.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/DJI_20250318065304_0305_D.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/1.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/2.jpg\n"
+                            },
+                            {
+                              "text": "Oversized: http://localhost:8080/img/Untitled_design.png\n"
+                            },
+                            {
+                              "text": "Found 0 images without alt text\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:54.531Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-9466a09ec06b621e95df",
+                  "file": "site-analysis.spec.js",
+                  "line": 18,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Accessibility Checks",
+              "file": "site-analysis.spec.js",
+              "line": 46,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have proper heading hierarchy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1732,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Heading level skip detected: H1 -> H3\n"
+                            },
+                            {
+                              "text": "Heading level skip detected: H2 -> H4\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:02.900Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-b333863f2df4f3caf537",
+                  "file": "site-analysis.spec.js",
+                  "line": 47,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper ARIA labels",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 1666,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 buttons without labels\n"
+                            },
+                            {
+                              "text": "Found 1 links without labels\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:02.938Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-4c7fab7813d9d02b802a",
+                  "file": "site-analysis.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should have sufficient color contrast",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1760,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 23 potential contrast issues\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:03.020Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-9a389030bde0e32f08f9",
+                  "file": "site-analysis.spec.js",
+                  "line": 93,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper heading hierarchy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2378,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Heading level skip detected: H1 -> H3\n"
+                            },
+                            {
+                              "text": "Heading level skip detected: H2 -> H4\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:15.276Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-49e52770b79d15db113b",
+                  "file": "site-analysis.spec.js",
+                  "line": 47,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper ARIA labels",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2697,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 buttons without labels\n"
+                            },
+                            {
+                              "text": "Found 1 links without labels\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:15.408Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-8c793dc208d9ac62833c",
+                  "file": "site-analysis.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should have sufficient color contrast",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 3193,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 23 potential contrast issues\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:17.680Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-d9cb747483e9005cfc06",
+                  "file": "site-analysis.spec.js",
+                  "line": 93,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper heading hierarchy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3437,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Heading level skip detected: H1 -> H3\n"
+                            },
+                            {
+                              "text": "Heading level skip detected: H2 -> H4\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:33.434Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-42fdf2deafea1420b7e1",
+                  "file": "site-analysis.spec.js",
+                  "line": 47,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper ARIA labels",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 3376,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 buttons without labels\n"
+                            },
+                            {
+                              "text": "Found 1 links without labels\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:33.744Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-4c52c9d7b78e74330716",
+                  "file": "site-analysis.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should have sufficient color contrast",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3344,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 23 potential contrast issues\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:33.851Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-fa30db730cced66b8015",
+                  "file": "site-analysis.spec.js",
+                  "line": 93,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper heading hierarchy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1979,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Heading level skip detected: H1 -> H3\n"
+                            },
+                            {
+                              "text": "Heading level skip detected: H2 -> H4\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:45.979Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-d882aa9c0394c69bb8d7",
+                  "file": "site-analysis.spec.js",
+                  "line": 47,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper ARIA labels",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1728,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 buttons without labels\n"
+                            },
+                            {
+                              "text": "Found 1 links without labels\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:46.235Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-921698371256da43818b",
+                  "file": "site-analysis.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should have sufficient color contrast",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 1641,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 23 potential contrast issues\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:46.276Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-44fe34ac63aebf29ec66",
+                  "file": "site-analysis.spec.js",
+                  "line": 93,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper heading hierarchy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 31,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2939,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Heading level skip detected: H1 -> H3\n"
+                            },
+                            {
+                              "text": "Heading level skip detected: H2 -> H4\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:57.279Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-a187e3f0eb241db84f8a",
+                  "file": "site-analysis.spec.js",
+                  "line": 47,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper ARIA labels",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 28,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2321,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 buttons without labels\n"
+                            },
+                            {
+                              "text": "Found 1 links without labels\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:54.883Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-2e241e8fdb9a103fec6a",
+                  "file": "site-analysis.spec.js",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "should have sufficient color contrast",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2664,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 23 potential contrast issues\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:56.903Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-0d4c355c0bababdaf030",
+                  "file": "site-analysis.spec.js",
+                  "line": 93,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "SEO Optimization",
+              "file": "site-analysis.spec.js",
+              "line": 134,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have proper meta tags",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 1732,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28",
+                            "location": {
+                              "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                              "column": 28,
+                              "line": 139
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                                "column": 28,
+                                "line": 139
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n\n\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:03.257Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                            "column": 28,
+                            "line": 139
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-dea0af0ac314ff571620",
+                  "file": "site-analysis.spec.js",
+                  "line": 135,
+                  "column": 5
+                },
+                {
+                  "title": "should have structured data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1704,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 structured data blocks\n"
+                            },
+                            {
+                              "text": "No structured data found - consider adding schema.org markup\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:03.260Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-26b2dbdcc0d71f9de0e6",
+                  "file": "site-analysis.spec.js",
+                  "line": 162,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper meta tags",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 2581,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28",
+                            "location": {
+                              "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                              "column": 28,
+                              "line": 139
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                                "column": 28,
+                                "line": 139
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n\n\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:18.414Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-firefox\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-firefox\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-firefox\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                            "column": 28,
+                            "line": 139
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-9b4dabca85bca438e9c8",
+                  "file": "site-analysis.spec.js",
+                  "line": 135,
+                  "column": 5
+                },
+                {
+                  "title": "should have structured data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3251,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 structured data blocks\n"
+                            },
+                            {
+                              "text": "No structured data found - consider adding schema.org markup\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:18.260Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-7b7480b68afb9454ec3b",
+                  "file": "site-analysis.spec.js",
+                  "line": 162,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper meta tags",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 4,
+                          "status": "failed",
+                          "duration": 3408,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28",
+                            "location": {
+                              "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                              "column": 28,
+                              "line": 139
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                                "column": 28,
+                                "line": 139
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n\n\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:34.058Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-webkit\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-webkit\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-webkit\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                            "column": 28,
+                            "line": 139
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-4ad0434c7742701235f0",
+                  "file": "site-analysis.spec.js",
+                  "line": 135,
+                  "column": 5
+                },
+                {
+                  "title": "should have structured data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 17162,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 structured data blocks\n"
+                            },
+                            {
+                              "text": "No structured data found - consider adding schema.org markup\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:36.076Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-8085711df3c78a9c1465",
+                  "file": "site-analysis.spec.js",
+                  "line": 162,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper meta tags",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 2,
+                          "status": "failed",
+                          "duration": 1749,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28",
+                            "location": {
+                              "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                              "column": 28,
+                              "line": 139
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                                "column": 28,
+                                "line": 139
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n\n\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:46.637Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Chrome\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Chrome\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Chrome\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                            "column": 28,
+                            "line": 139
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-9481d9a473f27a38c570",
+                  "file": "site-analysis.spec.js",
+                  "line": 135,
+                  "column": 5
+                },
+                {
+                  "title": "should have structured data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 1700,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 structured data blocks\n"
+                            },
+                            {
+                              "text": "No structured data found - consider adding schema.org markup\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:47.111Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-49a31f67d046e19a6887",
+                  "file": "site-analysis.spec.js",
+                  "line": 162,
+                  "column": 5
+                },
+                {
+                  "title": "should have proper meta tags",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 3091,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28",
+                            "location": {
+                              "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                              "column": 28,
+                              "line": 139
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                                "column": 28,
+                                "line": 139
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m60\u001b[39m\nReceived:   \u001b[31m82\u001b[39m\n\n\u001b[0m \u001b[90m 137 |\u001b[39m       expect(title)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m10\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m       expect(title\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m60\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m\n \u001b[90m 141 |\u001b[39m       \u001b[36mconst\u001b[39m metaDescription \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$eval(\u001b[32m'meta[name=\"description\"]'\u001b[39m\u001b[33m,\u001b[39m el \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcontent)\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m       expect(metaDescription)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js:139:28\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:57.055Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Safari\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Safari\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\dev\\KlickWayAthleticsClientWebsite\\test-results\\site-analysis-KlickWay-Ath-90fd6-hould-have-proper-meta-tags-Mobile-Safari\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\dev\\KlickWayAthleticsClientWebsite\\tests\\site-analysis.spec.js",
+                            "column": 28,
+                            "line": 139
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-fa8ae87467c209f62309",
+                  "file": "site-analysis.spec.js",
+                  "line": 135,
+                  "column": 5
+                },
+                {
+                  "title": "should have structured data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 28,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2832,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 structured data blocks\n"
+                            },
+                            {
+                              "text": "No structured data found - consider adding schema.org markup\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:57.235Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-08d5ef71f99ac6a7a84b",
+                  "file": "site-analysis.spec.js",
+                  "line": 162,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Mobile Responsiveness",
+              "file": "site-analysis.spec.js",
+              "line": 180,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should be mobile responsive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 3489,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Horizontal scroll detected at iPhone SE (375px)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:04.247Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-56e2fce99a87af93473d",
+                  "file": "site-analysis.spec.js",
+                  "line": 181,
+                  "column": 5
+                },
+                {
+                  "title": "should be mobile responsive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 4678,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Horizontal scroll detected at iPhone SE (375px)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:20.279Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-dc6c5089b21a599071e7",
+                  "file": "site-analysis.spec.js",
+                  "line": 181,
+                  "column": 5
+                },
+                {
+                  "title": "should be mobile responsive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 5238,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Horizontal scroll detected at iPhone SE (375px)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:36.679Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-533065ffde608c78a931",
+                  "file": "site-analysis.spec.js",
+                  "line": 181,
+                  "column": 5
+                },
+                {
+                  "title": "should be mobile responsive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 5803,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Horizontal scroll detected at iPhone SE (375px)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:47.946Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-384cd36b1a268b088d7d",
+                  "file": "site-analysis.spec.js",
+                  "line": 181,
+                  "column": 5
+                },
+                {
+                  "title": "should be mobile responsive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 29,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 5649,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Horizontal scroll detected at iPhone SE (375px)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:58.635Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-837cd3e398de2b1ae42e",
+                  "file": "site-analysis.spec.js",
+                  "line": 181,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Forms & Interactivity",
+              "file": "site-analysis.spec.js",
+              "line": 212,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have working form validation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 1481,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 1 forms\n"
+                            },
+                            {
+                              "text": "Form free-trial-form has 5 required fields\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:04.651Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-39150ddaece3d4ec9fff",
+                  "file": "site-analysis.spec.js",
+                  "line": 213,
+                  "column": 5
+                },
+                {
+                  "title": "should have working navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1845,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 external links\n"
+                            },
+                            {
+                              "text": "Found 5 potentially broken links\n"
+                            },
+                            {
+                              "text": "Broken: tel:206-555-0100\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/classes.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/boot-camp.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/cardio-sculpt.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/personal-training.html\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:04.751Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-8d2f96054d885ac3f0fa",
+                  "file": "site-analysis.spec.js",
+                  "line": 242,
+                  "column": 5
+                },
+                {
+                  "title": "should have working form validation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 3738,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 1 forms\n"
+                            },
+                            {
+                              "text": "Form free-trial-form has 5 required fields\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:20.914Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-4c4893817719f8bf8a01",
+                  "file": "site-analysis.spec.js",
+                  "line": 213,
+                  "column": 5
+                },
+                {
+                  "title": "should have working navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3597,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 external links\n"
+                            },
+                            {
+                              "text": "Found 5 potentially broken links\n"
+                            },
+                            {
+                              "text": "Broken: tel:206-555-0100\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/classes.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/boot-camp.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/cardio-sculpt.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/personal-training.html\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:21.553Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-cebe02ef115c2667564f",
+                  "file": "site-analysis.spec.js",
+                  "line": 242,
+                  "column": 5
+                },
+                {
+                  "title": "should have working form validation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3068,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 1 forms\n"
+                            },
+                            {
+                              "text": "Form free-trial-form has 5 required fields\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:36.922Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-37e5b322e2fd29fcfba6",
+                  "file": "site-analysis.spec.js",
+                  "line": 213,
+                  "column": 5
+                },
+                {
+                  "title": "should have working navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 3341,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 external links\n"
+                            },
+                            {
+                              "text": "Found 5 potentially broken links\n"
+                            },
+                            {
+                              "text": "Broken: tel:206-555-0100\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/classes.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/boot-camp.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/cardio-sculpt.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/personal-training.html\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:37.161Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-798bcade7da661106295",
+                  "file": "site-analysis.spec.js",
+                  "line": 242,
+                  "column": 5
+                },
+                {
+                  "title": "should have working form validation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1744,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 1 forms\n"
+                            },
+                            {
+                              "text": "Form free-trial-form has 5 required fields\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:47.989Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-3bd6cf888f8aacba5f56",
+                  "file": "site-analysis.spec.js",
+                  "line": 213,
+                  "column": 5
+                },
+                {
+                  "title": "should have working navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2056,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 external links\n"
+                            },
+                            {
+                              "text": "Found 5 potentially broken links\n"
+                            },
+                            {
+                              "text": "Broken: tel:206-555-0100\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/classes.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/boot-camp.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/cardio-sculpt.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/personal-training.html\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:48.012Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-8ccedb6bed6be69f9403",
+                  "file": "site-analysis.spec.js",
+                  "line": 242,
+                  "column": 5
+                },
+                {
+                  "title": "should have working form validation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 30,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2496,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 1 forms\n"
+                            },
+                            {
+                              "text": "Form free-trial-form has 5 required fields\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:58.920Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-2f7ee2f4416b2e029348",
+                  "file": "site-analysis.spec.js",
+                  "line": 213,
+                  "column": 5
+                },
+                {
+                  "title": "should have working navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3005,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 0 external links\n"
+                            },
+                            {
+                              "text": "Found 5 potentially broken links\n"
+                            },
+                            {
+                              "text": "Broken: tel:206-555-0100\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/classes.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/boot-camp.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/cardio-sculpt.html\n"
+                            },
+                            {
+                              "text": "Broken: http://localhost:8080/personal-training.html\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:59.596Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-11d18201770aeb0cd7a6",
+                  "file": "site-analysis.spec.js",
+                  "line": 242,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Security & Best Practices",
+              "file": "site-analysis.spec.js",
+              "line": 273,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should follow security best practices",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3570,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 18 resources loaded over HTTP (should use HTTPS)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:04.817Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-92c7872b1399be561c00",
+                  "file": "site-analysis.spec.js",
+                  "line": 274,
+                  "column": 5
+                },
+                {
+                  "title": "should follow security best practices",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4483,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 18 resources loaded over HTTP (should use HTTPS)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:24.345Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-55c4b70d4c1f5111617b",
+                  "file": "site-analysis.spec.js",
+                  "line": 274,
+                  "column": 5
+                },
+                {
+                  "title": "should follow security best practices",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 4992,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 18 resources loaded over HTTP (should use HTTPS)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:37.257Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-549ed170ccc2928653da",
+                  "file": "site-analysis.spec.js",
+                  "line": 274,
+                  "column": 5
+                },
+                {
+                  "title": "should follow security best practices",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 25,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3613,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 18 resources loaded over HTTP (should use HTTPS)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:50.886Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-cbf7a4d6886d75e10f92",
+                  "file": "site-analysis.spec.js",
+                  "line": 274,
+                  "column": 5
+                },
+                {
+                  "title": "should follow security best practices",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 28,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 4316,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Found 18 resources loaded over HTTP (should use HTTPS)\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:54:00.108Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-d79e84c76a8edb0a373f",
+                  "file": "site-analysis.spec.js",
+                  "line": 274,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Performance Opportunities",
+              "file": "site-analysis.spec.js",
+              "line": 314,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should identify optimization opportunities",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1484,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Loading 2 external scripts\n"
+                            },
+                            {
+                              "text": "Consider using font-display: swap for better perceived performance\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:05.000Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-ca830de1c1fe1d38a20c",
+                  "file": "site-analysis.spec.js",
+                  "line": 315,
+                  "column": 5
+                },
+                {
+                  "title": "should identify optimization opportunities",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2072,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Loading 2 external scripts\n"
+                            },
+                            {
+                              "text": "Consider using font-display: swap for better perceived performance\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:24.684Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-dec06329fc487377b496",
+                  "file": "site-analysis.spec.js",
+                  "line": 315,
+                  "column": 5
+                },
+                {
+                  "title": "should identify optimization opportunities",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 19,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2123,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Loading 2 external scripts\n"
+                            },
+                            {
+                              "text": "Consider using font-display: swap for better perceived performance\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:39.968Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-5e9c4c1bc7948dae659e",
+                  "file": "site-analysis.spec.js",
+                  "line": 315,
+                  "column": 5
+                },
+                {
+                  "title": "should identify optimization opportunities",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 1623,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Loading 2 external scripts\n"
+                            },
+                            {
+                              "text": "Consider using font-display: swap for better perceived performance\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:53:48.843Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-f2086ca6ea67034e0ebf",
+                  "file": "site-analysis.spec.js",
+                  "line": 315,
+                  "column": 5
+                },
+                {
+                  "title": "should identify optimization opportunities",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 32,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1801,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Loading 2 external scripts\n"
+                            },
+                            {
+                              "text": "Consider using font-display: swap for better perceived performance\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-22T03:54:02.312Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a38f621b447b270e45a6-cd95f09d706a010817a7",
+                  "file": "site-analysis.spec.js",
+                  "line": 315,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Generate Improvement Report",
+          "file": "site-analysis.spec.js",
+          "line": 350,
+          "column": 6,
+          "specs": [
+            {
+              "title": "compile findings and recommendations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 320,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n=== WEBSITE ANALYSIS COMPLETE ===\n\n"
+                        },
+                        {
+                          "text": "Key Areas for Improvement:\n"
+                        },
+                        {
+                          "text": "1. Performance: Implement lazy loading, optimize images, minify assets\n"
+                        },
+                        {
+                          "text": "2. SEO: Add Open Graph tags, structured data, optimize meta descriptions\n"
+                        },
+                        {
+                          "text": "3. Accessibility: Fix heading hierarchy, add missing alt texts, improve contrast\n"
+                        },
+                        {
+                          "text": "4. Security: Add rel=\"noopener noreferrer\" to external links\n"
+                        },
+                        {
+                          "text": "5. Mobile: Test and fix any responsive issues\n"
+                        },
+                        {
+                          "text": "6. Forms: Enhance validation and user feedback\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:07.804Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a38f621b447b270e45a6-dccecd4f6bb3b11633ac",
+              "file": "site-analysis.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "compile findings and recommendations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1336,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n=== WEBSITE ANALYSIS COMPLETE ===\n\n"
+                        },
+                        {
+                          "text": "Key Areas for Improvement:\n"
+                        },
+                        {
+                          "text": "1. Performance: Implement lazy loading, optimize images, minify assets\n"
+                        },
+                        {
+                          "text": "2. SEO: Add Open Graph tags, structured data, optimize meta descriptions\n"
+                        },
+                        {
+                          "text": "3. Accessibility: Fix heading hierarchy, add missing alt texts, improve contrast\n"
+                        },
+                        {
+                          "text": "4. Security: Add rel=\"noopener noreferrer\" to external links\n"
+                        },
+                        {
+                          "text": "5. Mobile: Test and fix any responsive issues\n"
+                        },
+                        {
+                          "text": "6. Forms: Enhance validation and user feedback\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:25.067Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a38f621b447b270e45a6-d9775593ae5dcd2e4957",
+              "file": "site-analysis.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "compile findings and recommendations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 751,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n=== WEBSITE ANALYSIS COMPLETE ===\n\n"
+                        },
+                        {
+                          "text": "Key Areas for Improvement:\n"
+                        },
+                        {
+                          "text": "1. Performance: Implement lazy loading, optimize images, minify assets\n"
+                        },
+                        {
+                          "text": "2. SEO: Add Open Graph tags, structured data, optimize meta descriptions\n"
+                        },
+                        {
+                          "text": "3. Accessibility: Fix heading hierarchy, add missing alt texts, improve contrast\n"
+                        },
+                        {
+                          "text": "4. Security: Add rel=\"noopener noreferrer\" to external links\n"
+                        },
+                        {
+                          "text": "5. Mobile: Test and fix any responsive issues\n"
+                        },
+                        {
+                          "text": "6. Forms: Enhance validation and user feedback\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:40.012Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a38f621b447b270e45a6-18dcf809f94e026d1dfb",
+              "file": "site-analysis.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "compile findings and recommendations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 324,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n=== WEBSITE ANALYSIS COMPLETE ===\n\n"
+                        },
+                        {
+                          "text": "Key Areas for Improvement:\n"
+                        },
+                        {
+                          "text": "1. Performance: Implement lazy loading, optimize images, minify assets\n"
+                        },
+                        {
+                          "text": "2. SEO: Add Open Graph tags, structured data, optimize meta descriptions\n"
+                        },
+                        {
+                          "text": "3. Accessibility: Fix heading hierarchy, add missing alt texts, improve contrast\n"
+                        },
+                        {
+                          "text": "4. Security: Add rel=\"noopener noreferrer\" to external links\n"
+                        },
+                        {
+                          "text": "5. Mobile: Test and fix any responsive issues\n"
+                        },
+                        {
+                          "text": "6. Forms: Enhance validation and user feedback\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:53:49.765Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a38f621b447b270e45a6-c683ed83b02019c4b60d",
+              "file": "site-analysis.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "compile findings and recommendations",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 31,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 744,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n=== WEBSITE ANALYSIS COMPLETE ===\n\n"
+                        },
+                        {
+                          "text": "Key Areas for Improvement:\n"
+                        },
+                        {
+                          "text": "1. Performance: Implement lazy loading, optimize images, minify assets\n"
+                        },
+                        {
+                          "text": "2. SEO: Add Open Graph tags, structured data, optimize meta descriptions\n"
+                        },
+                        {
+                          "text": "3. Accessibility: Fix heading hierarchy, add missing alt texts, improve contrast\n"
+                        },
+                        {
+                          "text": "4. Security: Add rel=\"noopener noreferrer\" to external links\n"
+                        },
+                        {
+                          "text": "5. Mobile: Test and fix any responsive issues\n"
+                        },
+                        {
+                          "text": "6. Forms: Enhance validation and user feedback\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-22T03:54:00.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a38f621b447b270e45a6-4d92f6f5a9cfb562eb5a",
+              "file": "site-analysis.spec.js",
+              "line": 351,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-22T03:52:56.345Z",
+    "duration": 69399.7,
+    "expected": 85,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}
