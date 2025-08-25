@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlickWay Kids Club - Fun & Safe Child Care While You Train | Marysville</title>
+    <meta name="description" content="KlickWay Kids Club in Marysville offers supervised childcare for ages 12 months to 12 years. CPR-certified staff, fun activities, and Kid Fit classes available.">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/scroll-fix.css">    
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .kids-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/kids-hero-bg.jpg') center/cover;
+            padding: 100px 0;
+            color: var(--white);
+            text-align: center;
+            background-color: var(--bg-dark);
+        }
+        
+        .kids-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: var(--heading-font);
+        }
+        
+        .kids-hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: var(--white);
+            opacity: 0.9;
+        }
+        
+        .kids-logo {
+            max-width: 200px;
+            margin: 0 auto 2rem;
+            display: block;
+        }
+        
+        .age-groups {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .age-group-card {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .age-group-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            border-color: var(--primary-color);
+        }
+        
+        .age-group-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-family: var(--heading-font);
+        }
+        
+        .age-group-card p,
+        .age-group-card ul li {
+            color: var(--white);
+            opacity: 0.9;
+        }
+        
+        .age-group-card .age-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .policies-section {
+            background: var(--bg-darker);
+            padding: 4rem 0;
+        }
+        
+        .policies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .policy-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .policy-card h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            font-family: var(--heading-font);
+        }
+        
+        .policy-card h4 i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+        
+        .policy-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .policy-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--white);
+            opacity: 0.9;
+        }
+        
+        .policy-card ul li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .features-banner {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .features-banner h3 {
+            margin-bottom: 1rem;
+            font-family: var(--heading-font);
+        }
+        
+        .features-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .feature-item i {
+            font-size: 1.5rem;
+        }
+        
+        .cta-section {
+            background: var(--bg-darker);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .cta-section h2 {
+            margin-bottom: 1rem;
+            font-family: var(--heading-font);
+        }
+        
+        .cta-section p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-buttons .btn {
+            padding: 1rem 2rem;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            padding: var(--section-padding);
+            background: var(--bg-dark);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-family: var(--heading-font);
+            color: var(--white);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .max-width-800 {
+            max-width: 800px;
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .lead {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+        
+        /* Photo Gallery Styles */
+        .gallery-section {
+            padding: var(--section-padding);
+            background: var(--bg-dark);
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 300px;
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: var(--primary-color);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-overlay h4 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-family: var(--heading-font);
+        }
+        
+        .gallery-overlay p {
+            color: var(--white);
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
+            color: var(--white);
+            opacity: 0.5;
+        }
+        
+        .gallery-placeholder i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span class="award-badge">
+                        <i class="fas fa-trophy"></i>
+                        Training Facility in Washington with most 1st place finishers
+                    </span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="tel:206-555-0100" class="top-phone">
+                        <i class="fas fa-phone"></i>
+                        (206) 555-0100
+                    </a>
+                    <div class="social-links-top">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="classes.html">Classes <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="boot-camp.html">Boot Camp</a></li>
+                                <li><a href="cardio-sculpt.html">Cardio Sculpt</a></li>
+                                <li><a href="personal-training.html">Personal Training</a></li>
+                                <li><a href="strength-training.html">Strength Training</a></li>
+                                <li><a href="mobility-training.html">Mobility Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="locations.html">Locations <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="locations/everett.html">Everett</a></li>
+                                <li><a href="locations/renton.html">Renton</a></li>
+                                <li><a href="locations/marysville.html">Marysville</a></li>
+                                <li><a href="locations/seattle.html">Seattle</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="kids.html" class="active">Kids Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="join-now.html" class="btn-nav">Join Now</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics">
+            <button class="mobile-nav-close" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Classes <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="boot-camp.html">Boot Camp</a></li>
+                    <li><a href="cardio-sculpt.html">Cardio Sculpt</a></li>
+                    <li><a href="personal-training.html">Personal Training</a></li>
+                    <li><a href="strength-training.html">Strength Training</a></li>
+                    <li><a href="mobility-training.html">Mobility Training</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Locations <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="locations/everett.html">Everett</a></li>
+                    <li><a href="locations/renton.html">Renton</a></li>
+                    <li><a href="locations/marysville.html">Marysville</a></li>
+                    <li><a href="locations/seattle.html">Seattle</a></li>
+                </ul>
+            </li>
+            <li><a href="kids.html" class="active">Kids Club</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="join-now.html" class="btn-nav">Join Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="kids-hero">
+        <div class="container">
+            <img src="img/kids logo.png" alt="KlickWay Kids Logo" class="kids-logo">
+            <h1>Kids Club at KlickWay Athletics</h1>
+            <p class="subtitle">Train with Peace of Mind While Your Kids Have Fun!</p>
+            <div class="location-badge">
+                <i class="fas fa-map-marker-alt"></i> Exclusive to Marysville Location
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center max-width-800 mx-auto">
+                <h2>Welcome to KlickWay Kids Club</h2>
+                <p class="lead">Our Kids Club is designed to give parents peace of mind while they train. Kids ages 12 months to 12 years old can enjoy a safe, fun environment supervised by friendly staff trained in CPR, AED, and First Aid.</p>
+                <p>Children will have plenty to do, from age-appropriate games and play areas to arts, crafts, and safe activity zones. For kids a little older, we also offer Kid Fit classes (ages 7–12) that build healthy habits through fun movement and activities.</p>
+            </div>
+
+            <div class="features-banner">
+                <h3>What Makes KlickWay Kids Special</h3>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>CPR & First Aid Certified Staff</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <span>2-Hour Max Stay</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-child"></i>
+                        <span>Ages 12 Months - 12 Years</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Gaming Console Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Activities by Age Group</h2>
+            
+            <div class="age-groups">
+                <div class="age-group-card">
+                    <span class="age-badge">Ages 12 Months - 6 Years</span>
+                    <h3>Toddlers & Young Kids</h3>
+                    <p>We keep little ones engaged with hands-on activities designed for their developmental stage:</p>
+                    <ul>
+                        <li>Arts and crafts projects</li>
+                        <li>Interactive story time</li>
+                        <li>Age-appropriate games and toys</li>
+                        <li>Safe play areas with soft surfaces</li>
+                        <li>Supervised social interaction</li>
+                    </ul>
+                    <p>Everything is designed to keep them entertained and safe while you complete your workout.</p>
+                </div>
+
+                <div class="age-group-card">
+                    <span class="age-badge">Ages 7 - 11 Years</span>
+                    <h3>School-Age Kids</h3>
+                    <p>Older kids can join in on group games, crafts, and activities that help them make new friends and stay active:</p>
+                    <ul>
+                        <li>Group games and activities</li>
+                        <li>Creative arts and crafts</li>
+                        <li>Kid Fit classes (30 minutes after school)</li>
+                        <li>Movement and teamwork activities</li>
+                        <li>Gaming console for screen time (parent approval required)</li>
+                    </ul>
+                    <p>Our Kid Fit classes focus on movement, teamwork, and fun!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">See Our Kids Club in Action</h2>
+            <p class="text-center max-width-800 mx-auto">
+                Take a peek inside our vibrant Kids Club at the Marysville location. Our safe, fun environment keeps children engaged while parents focus on their fitness goals.
+            </p>
+            
+            <div class="photo-gallery">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Play Area</h4>
+                        <p>Safe and engaging play spaces designed for different age groups</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Kid Fit Classes</h4>
+                        <p>Fun fitness activities that build healthy habits from an early age</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Arts & Crafts</h4>
+                        <p>Creative activities to spark imagination and develop fine motor skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="policies-section">
+        <div class="container">
+            <h2 class="section-title">KlickWay Kids Club Policies</h2>
+            <p class="text-center max-width-800 mx-auto">At KlickWay Athletics, our Kids Club is a supervised play area designed to give parents peace of mind while they work out. <strong>Please note: Kids Club is not a licensed childcare facility. Parents/guardians must remain on gym premises at all times.</strong></p>
+
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <h4><i class="fas fa-users"></i> General Guidelines</h4>
+                    <ul>
+                        <li>Age Range: 1 year to 12 years</li>
+                        <li>Maximum stay: 2 hours per visit</li>
+                        <li>Children 13+ may use workout floor with supervision</li>
+                        <li>Must be on active family membership</li>
+                        <li>No friends, cousins, or babysitting arrangements</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h4><i class="fas fa-check-circle"></i> Check-In/Out</h4>
+                    <ul>
+                        <li>Only parent/guardian on membership can check in/out</li>
+                        <li>Children must be on family membership</li>
+                        <li>Valid membership required for entry</li>
+                        <li>Sign-in/out required each visit</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h4><i class="fas fa-heartbeat"></i> Health & Safety</h4>
+                    <ul>
+                        <li>No sick children (fever, cough, rash, etc.)</li>
+                        <li>Staff do not provide hygiene assistance</li>
+                        <li>Parents paged if assistance needed</li>
+                        <li>No food allowed; drinks in spill-proof containers</li>
+                        <li>Socks or shoes required at all times</li>
+                        <li>No wet clothing or swimsuits</li>
+                    </ul>
+                </div>
+
+                <div class="policy-card">
+                    <h4><i class="fas fa-child"></i> Behavior Expectations</h4>
+                    <ul>
+                        <li>Parents called if child cries >10 minutes</li>
+                        <li>Time-outs used for minor issues</li>
+                        <li>Unsafe behavior may result in suspension</li>
+                        <li>Personal toys not allowed</li>
+                        <li>Electronics permitted for ages 5+ (must be labeled)</li>
+                        <li>KlickWay not responsible for lost/damaged items</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="policy-card" style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h4><i class="fas fa-exclamation-triangle"></i> Important Notes</h4>
+                <ul>
+                    <li>Entry may be limited if Kids Club reaches capacity</li>
+                    <li>KlickWay reserves the right to refuse care if behavior poses risk</li>
+                    <li>This is a supervised play area, not licensed childcare</li>
+                    <li>Parents must remain on premises at all times</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience KlickWay Kids Club?</h2>
+            <p>Join our Marysville location and enjoy worry-free workouts while your kids have a blast!</p>
+            <div class="cta-buttons">
+                <a href="join-now.html" class="btn btn-primary">Join Now</a>
+                <a href="locations/marysville.html" class="btn btn-secondary">Visit Marysville Location</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-column">
+                    <img src="img/Klickway-Athletics_Secondary-Logo-on-Black.png" alt="KlickWay Athletics" class="footer-logo">
+                    <p>
+                        KlickWay Athletics offers the perfect blend of state-of-the-art facilities and expert coaching 
+                        to help you unlock your potential.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="personal-training.html">Personal Training</a></li>
+                        <li><a href="nutrition-coaching.html">Nutrition Coaching</a></li>
+                        <li><a href="kids.html">Kids Club</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Locations -->
+                <div class="footer-column">
+                    <h4>Our Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="locations/everett.html">Everett</a></li>
+                        <li><a href="locations/renton.html">Renton</a></li>
+                        <li><a href="locations/marysville.html">Marysville (Kids Club)</a></li>
+                        <li><a href="locations/seattle.html">Seattle (24/7)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:206-555-0100">(206) 555-0100</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@klickwayathletics.com">info@klickwayathletics.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            Mon-Fri: 5AM-10PM<br>
+                            Sat-Sun: 7AM-8PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>&copy; 2024 KlickWay Athletics. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
